@@ -10,6 +10,10 @@
 <meta property="og:description" content="Senior mobile developer with 14 years shipping iOS, Android, Flutter and Kotlin Multiplatform apps for German, Swiss and Thai clients. Built the RLAX Android app (4.9-star rating, 10K+ downloads, 73 releases), mentors Flutter developers and built the company&#x27;s AI plugin for mobile developers.">
 <meta property="og:url" content="https://nutdanai-j.github.io/">
 <meta property="og:type" content="profile">
+<meta property="og:image" content="https://nutdanai-j.github.io/og.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232563eb'/%3E%3Ctext x='32' y='42' font-size='28' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'%3ENJ%3C/text%3E%3C/svg%3E">
 <link rel="canonical" href="https://nutdanai-j.github.io/">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Nutdanai Jantarawong", "jobTitle": "Senior Mobile Developer — iOS · Android · Flutter · KMP", "url": "https://nutdanai-j.github.io/", "sameAs": ["https://linkedin.com/in/nutdanai-jantarawong"], "address": {"@type": "PostalAddress", "addressLocality": "Chiang Mai", "addressCountry": "TH"}}</script>
 <style>
@@ -32,7 +36,7 @@ nav a{color:var(--muted);text-decoration:none;font-size:.92rem}nav a:hover{color
 .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--line);margin-left:.5rem}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin:24px 0 8px}
 .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
-.stat .num{display:block;font-size:1.6rem;font-weight:700;letter-spacing:-.01em}
+.stat .num{display:block;font-size:1.45rem;font-weight:700;letter-spacing:-.01em;white-space:nowrap}
 .stat .lbl{font-size:.85rem;color:var(--muted)}
 section{padding:48px 0 8px}
 h2{font-size:1.6rem;margin:0 0 1rem;letter-spacing:-.01em}
@@ -61,7 +65,32 @@ h2{font-size:1.6rem;margin:0 0 1rem;letter-spacing:-.01em}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin:.7rem 0 .2rem}
 .chips span,.skill span{background:var(--chip);border-radius:6px;padding:.15rem .55rem;font-size:.8rem}
 .more{margin-top:.5rem;background:none;border:0;color:var(--accent);font:inherit;font-size:.88rem;cursor:pointer;padding:0}
-.tl-item.hide{display:none}
+.pos-wrap{min-width:0}
+.sub{margin:14px 0 0 18px;padding-left:18px;border-left:2px dashed var(--line)}
+.sub h5{margin:18px 0 10px;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.hint{text-transform:none;letter-spacing:0;font-weight:400}
+.feats{display:grid;gap:12px}
+.feat{border-top:3px solid var(--accent2)}
+.foot{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:.5rem}
+.badges{display:flex;flex-wrap:wrap;gap:8px}
+.badge{display:inline-block;font-size:.8rem;font-weight:600;text-decoration:none;color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:.25rem .6rem;background:var(--chip)}
+.badge:hover{border-color:var(--accent)}
+.rows{display:grid;gap:6px}
+.row{background:var(--card);border:1px solid var(--line);border-radius:10px}
+.row summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:96px 1fr auto;gap:2px 12px;padding:10px 14px;align-items:baseline}
+.row summary::-webkit-details-marker{display:none}
+.row .yr{color:var(--muted);font-size:.85rem;font-variant-numeric:tabular-nums}
+.row .nm{font-weight:600}.row .rl{grid-column:2;color:var(--muted);font-size:.85rem}
+.row .plat{grid-row:1;grid-column:3}
+.row[open]{border-color:var(--accent)}
+.row-body{padding:0 14px 12px 122px}.row-body ul{margin:.2rem 0;padding-left:1.1rem}
+.empty{display:none;color:var(--muted);font-size:.9rem}
+.sub.none .empty{display:block}
+.hide{display:none!important}
+.core{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:14px}
+.core h3{margin:0 0 .6rem;font-size:.95rem}.core div{display:flex;flex-wrap:wrap;gap:8px}
+.core span{background:var(--accent);color:#fff;border-radius:6px;padding:.2rem .65rem;font-size:.88rem}
+.all-skills>summary{cursor:pointer;color:var(--accent);font-weight:600;margin:4px 0 14px}
 .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
 .skill{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
 .skill h3{margin:0 0 .6rem;font-size:.95rem}
@@ -72,9 +101,10 @@ footer{padding:48px 0 64px;color:var(--muted);font-size:.85rem;text-align:center
 .js .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 @media (max-width:640px){nav .links{display:none}
+ .sub{margin-left:0;padding-left:12px}.row summary{grid-template-columns:1fr auto}.row .yr{grid-column:1/-1}.row .rl{grid-column:1}.row .plat{grid-row:auto;grid-column:2}.row-body{padding-left:14px}
  .timeline:before{left:7px}.tl-item{grid-template-columns:1fr;gap:4px;padding-left:28px}
  .tl-item .when{text-align:left;padding-top:0}.tl-item .dot{left:1px;top:4px}.tl-item.pos .dot{left:-2px;top:2px}}
-@media print{nav,.filters,.more,.btn{display:none}.js .reveal{opacity:1;transform:none}.extra{max-height:none}}
+@media print{nav,.filters,.more,.btn,.badges{display:none}.js .reveal{opacity:1;transform:none}.extra{max-height:none}}
 </style>
 </head>
 <body>
@@ -95,139 +125,105 @@ footer{padding:48px 0 64px;color:var(--muted);font-size:.85rem;text-align:center
 <section id="journey"><h2>Career journey</h2>
 <div class="filters" role="toolbar" aria-label="Filter projects"><button data-f="all" aria-pressed="true">All</button><button data-f="android" aria-pressed="false">Android</button><button data-f="ios" aria-pressed="false">iOS</button><button data-f="flutter" aria-pressed="false">Flutter</button><button data-f="kmp" aria-pressed="false">KMP</button><button data-f="ai" aria-pressed="false">AI</button></div>
 <ul class="timeline">
-<li class="tl-item pos reveal" data-f="ai android flutter ios">
+<li class="tl-item pos reveal">
 <div class="dot"></div>
 <div class="when">Sep 2016 – Present</div>
-<div class="card pos-card"><h3>Senior Mobile Developer</h3><p class="org">BUZZWOO! GmbH &amp; Co. KG</p>
-<p class="where">Chiang Mai, Thailand · Remote with German teams · client apps for German, Swiss and Thai brands</p><ul><li>Mentored two mid-level Flutter developers and one Flutter intern through code review, onboarding and project handovers</li><li>Built the company&#x27;s Claude Code mobile plugin for all mobile developers: an iOS–Android feature-transposition skill and parity auditor</li><li>Authored the company Android Kotlin style guide and project template (MVVM, Dagger, CI, fastlane track promotion)</li><li>Maintained Apple Enterprise signing infrastructure with fastlane match for 16 in-house and client apps</li><li>Set up GitLab CI and fastlane release pipelines across Android, iOS and Flutter client apps</li></ul></div></li>
-<li class="tl-item reveal" data-f="ai android ios">
-<div class="dot"></div>
-<div class="when">2026</div>
-<div class="card"><div class="card-head"><h4>Youth football training app, pre-launch, Germany</h4><span class="plat">iOS · Android</span></div>
-<p class="org">Lead Mobile Developer</p>
-<ul><li>Led native iOS and Android delivery for a youth football training product in a four-person team (PM, backend, two mobile)</li></ul>
-<div class="extra"><ul><li>Co-designed drill API contracts with the backend developer, then built server-driven training plans and benchmark tests on iOS and Android</li><li>Authored all 65 architecture decision records, driving choices from server-driven drills and locale handling to error flows</li><li>Integrated subscriptions with RevenueCat, StoreKit and Play Billing, plus push notifications and a native video player</li><li>Delivered iOS and Android features in parallel by directing seven Claude Code agents from reviewed plans and ADRs</li><li>Reviewed 71 teammate merge requests; median review turnaround fell from 24 hours to under 2 hours after adding automated review</li><li>Built an error-handling system with an error matrix and dedicated error screens on both platforms</li></ul><div class="chips"><span>SwiftUI</span><span>Jetpack Compose</span><span>RevenueCat</span><span>Firebase Cloud Messaging</span><span>fastlane</span></div></div>
-<button class="more" aria-expanded="false">+ 6 more</button></div></li>
-<li class="tl-item reveal" data-f="android flutter ios">
-<div class="dot"></div>
-<div class="when">2024 – 2026</div>
-<div class="card"><div class="card-head"><h4>Stuwe</h4><span class="plat">Flutter · iOS · Android</span></div>
-<p class="org">Flutter Developer (project takeover) <a class="ext" href="https://my-stuwe.de" target="_blank" rel="noopener">my-stuwe.de ↗</a></p>
-<ul><li>Maintained the Flutter canteen app for about 1.3K active Android devices, mostly in Germany, across 2024–2026 releases</li></ul>
-<div class="extra"><ul><li>Fixed a production crash with a schema probe tool and a 68-check regression harness</li><li>Brought the Android build to API 36 and 16 KB page-size compliance</li></ul><div class="chips"><span>Flutter</span><span>Firebase App Distribution</span></div></div>
-<button class="more" aria-expanded="false">+ 2 more</button></div></li>
-<li class="tl-item reveal" data-f="ai android flutter ios">
-<div class="dot"></div>
-<div class="when">2024 – 2026</div>
-<div class="card"><div class="card-head"><h4>Meet Your Master</h4><span class="plat">Flutter · iOS · Android</span></div>
-<p class="org">Lead Flutter Developer <a class="ext" href="https://meetyourmaster.de" target="_blank" rel="noopener">meetyourmaster.de ↗</a></p>
-<ul><li>Built the video-learning app from the first commit through its production 2.0 launch</li></ul>
-<div class="extra"><ul><li>Implemented subscriptions and per-course purchases on both stores, plus encrypted offline video downloads</li><li>Shipped on-device ML Kit text recognition that reads redeem codes from the camera, plus social sign-in and Chromecast</li></ul><div class="chips"><span>Flutter</span><span>Clean Architecture</span><span>in-app purchases</span><span>better_player</span><span>OneSignal</span><span>google_mlkit_text_recognition</span></div></div>
-<button class="more" aria-expanded="false">+ 2 more</button></div></li>
-<li class="tl-item reveal" data-f="ai android ios">
-<div class="dot"></div>
-<div class="when">2020 – 2026</div>
-<div class="card"><div class="card-head"><h4>RLAX</h4><span class="plat">Android · iOS</span></div>
-<p class="org">Lead Android Developer, iOS contributor <a class="ext" href="https://rlax.com" target="_blank" rel="noopener">rlax.com ↗</a></p>
-<ul><li>Built the RLAX Android app and maintained it through 73 Play Store releases (4.9-star rating, 10K+ downloads)</li></ul>
-<div class="extra"><ul><li>Co-developed SwiftUI features and App Store releases for the iOS app (10.5K downloads in 2026)</li><li>Cut Google Play user-perceived crash rate from 11% to 1.5% by triaging Sentry reports and fixing root causes</li><li>Fixed cold-start, Compose list-key and fragment-lifecycle crashes, then added a startup test to catch regressions</li><li>Integrated Omise card payments end to end into the RLAX Android booking flow</li><li>Migrated XML and Fragment screens to Jetpack Compose and built the Home Care booking vertical in Compose</li><li>Built in-app chat with Firestore, push notifications, deep links and read receipts</li><li>Built a Play vitals tool that clusters crashes and ANRs per build, then fixed the app&#x27;s largest crash cluster</li><li>Modernized the build with a version catalog, detekt and lint baselines, targetSdk 36 and 16 KB page-size compliance</li></ul><div class="chips"><span>Kotlin</span><span>Coroutines</span><span>Jetpack Compose</span><span>MVVM</span><span>Dagger</span><span>Retrofit</span><span>Firebase</span><span>Omise</span><span>Swift</span><span>SwiftUI</span></div></div>
-<button class="more" aria-expanded="false">+ 8 more</button></div></li>
-<li class="tl-item reveal" data-f="android ios kmp">
-<div class="dot"></div>
-<div class="when">2026</div>
-<div class="card"><div class="card-head"><h4>DoenerCheck</h4><span class="plat">KMP · iOS · Android</span></div>
-<p class="org">Mobile Developer (project takeover) <a class="ext" href="https://doenercheck.app" target="_blank" rel="noopener">doenercheck.app ↗</a></p>
-<ul><li>Took over a Kotlin Multiplatform app from another agency, re-homing APIs and replacing Sentry with Firebase Crashlytics</li></ul>
-<div class="extra"><ul><li>Added Firebase push on both platforms and set up dev/prod flavors, Kover coverage and unit tests</li><li>Set up fastlane delivery to TestFlight, Firebase App Distribution and Google Play</li></ul><div class="chips"><span>Kotlin Multiplatform</span><span>Ktor</span><span>SQLDelight</span><span>SwiftUI</span><span>Jetpack Compose</span><span>Koin</span></div></div>
-<button class="more" aria-expanded="false">+ 2 more</button></div></li>
-<li class="tl-item reveal" data-f="android flutter ios">
-<div class="dot"></div>
-<div class="when">2022 – 2026</div>
-<div class="card"><div class="card-head"><h4>ORS</h4><span class="plat">Flutter · iOS · Android</span></div>
-<p class="org">Lead Flutter Developer</p>
-<ul><li>Built a resident app in 13 languages, including right-to-left Arabic and Farsi, with in-app QR scanning</li></ul>
-<div class="extra"><ul><li>Set up fastlane, App Center and push notifications, then prepared the handover to the client&#x27;s team</li></ul><div class="chips"><span>Flutter</span><span>Firebase Cloud Messaging</span><span>QR scanning</span><span>fastlane</span></div></div>
-<button class="more" aria-expanded="false">+ 1 more</button></div></li>
-<li class="tl-item reveal" data-f="android flutter ios">
-<div class="dot"></div>
-<div class="when">2025</div>
-<div class="card"><div class="card-head"><h4>Bedtime Donations</h4><span class="plat">Flutter · iOS · Android</span></div>
-<p class="org">Sole Flutter Developer <a class="ext" href="https://bedtime-donations.com" target="_blank" rel="noopener">bedtime-donations.com ↗</a></p>
-<ul><li>Built a Royal Society for Blind Children (UK) app where volunteers record bedtime stories as audiobooks for blind children</li></ul>
-<div class="extra"><ul><li>Developed the app alone from first commit to App Store and Google Play release (5K+ iOS, 1K+ Android downloads)</li><li>Built an EPUB reader that records the user&#x27;s voice with sentence highlighting, plus an audiobook player with lock-screen controls</li></ul><div class="chips"><span>Flutter</span><span>GetX</span><span>just_audio</span><span>ffmpeg</span><span>Firebase</span></div></div>
-<button class="more" aria-expanded="false">+ 2 more</button></div></li>
-<li class="tl-item reveal" data-f="flutter">
-<div class="dot"></div>
-<div class="when">2022 – 2023</div>
-<div class="card"><div class="card-head"><h4>Tidely</h4><span class="plat">Flutter · Web</span></div>
-<p class="org">Flutter Developer <a class="ext" href="https://tidely.com" target="_blank" rel="noopener">tidely.com ↗</a></p>
-<ul><li>Built the dashboard, cash-flow forecast and invoice transaction features of a liquidity-planning web app for German SMEs</li></ul>
-<div class="extra"><ul><li>Joined Tidely&#x27;s in-house product team as one of two BUZZWOO! Flutter developers on yearly contracts</li><li>Simulated the backend on a Docker test server to build and verify features, tracked in JIRA and Bitbucket</li></ul><div class="chips"><span>Flutter Web</span><span>Dart</span><span>Docker</span><span>JIRA</span><span>Bitbucket</span></div></div>
-<button class="more" aria-expanded="false">+ 2 more</button></div></li>
-<li class="tl-item reveal" data-f="android">
-<div class="dot"></div>
-<div class="when">2019 – 2023</div>
-<div class="card"><div class="card-head"><h4>Nubert nuReality</h4><span class="plat">Android</span></div>
-<p class="org">Lead Android Developer <a class="ext" href="https://nubert.de/en" target="_blank" rel="noopener">nubert.de/en ↗</a></p>
-<ul><li>Took an AR speaker-placement prototype to a Google Play release (5K+ downloads) and maintained it for four years</li></ul>
-<div class="extra"><ul><li>Built 3D model placement with move, rotate and scale gestures using ARCore and Sceneform</li><li>Built custom animations for the AR speaker-placement app</li><li>Fixed recurring memory leaks in AR speaker rendering by optimising 3D model textures and shaders</li></ul><div class="chips"><span>Kotlin</span><span>ARCore</span><span>Sceneform</span><span>MVVM</span><span>Dagger</span><span>Room</span></div></div>
-<button class="more" aria-expanded="false">+ 3 more</button></div></li>
-<li class="tl-item reveal" data-f="android flutter ios">
-<div class="dot"></div>
-<div class="when">2020 – 2023</div>
-<div class="card"><div class="card-head"><h4>RLAX Therapist</h4><span class="plat">Flutter · iOS · Android</span></div>
-<p class="org">Lead Flutter Developer</p>
-<ul><li>Created the therapist-side Flutter app and shipped 64 production releases to App Store and Google Play</li></ul>
-<div class="extra"><ul><li>Built job broadcast and PromptPay QR payments, letting therapists accept bookings and get paid in-app</li><li>Added Gherkin BDD tests, SonarQube and a GitLab CI pipeline with staging and production lanes</li></ul><div class="chips"><span>Flutter</span><span>BLoC</span><span>get_it</span><span>freezed</span><span>Hive</span><span>fastlane</span></div></div>
-<button class="more" aria-expanded="false">+ 2 more</button></div></li>
-<li class="tl-item reveal" data-f="android">
-<div class="dot"></div>
-<div class="when">2017 – 2020</div>
-<div class="card"><div class="card-head"><h4>Tele 5 (5flix)</h4><span class="plat">Android · tvOS</span></div>
-<p class="org">Android Developer <a class="ext" href="https://tele5.de" target="_blank" rel="noopener">tele5.de ↗</a></p>
-<ul><li>Built login, tablet layouts, IMA video ads, privacy center and Chromecast support for a Kotlin streaming app</li></ul>
-<div class="extra"><ul><li>Set up GitLab CI, fastlane and SonarQube, and led the AndroidX migration</li><li>Started an Apple TV client prototype with TVML and Swift</li></ul><div class="chips"><span>Kotlin</span><span>Dagger</span><span>RxJava</span><span>Retrofit</span><span>JW Player</span><span>Chromecast</span></div></div>
-<button class="more" aria-expanded="false">+ 2 more</button></div></li>
-<li class="tl-item reveal" data-f="android">
-<div class="dot"></div>
-<div class="when">2018 – 2019</div>
-<div class="card"><div class="card-head"><h4>ImuPro</h4><span class="plat">Android</span></div>
-<p class="org">Android Developer <a class="ext" href="https://imupro.sg" target="_blank" rel="noopener">imupro.sg ↗</a></p>
-<ul><li>Built a Kotlin diet app that imports test results by QR code and guides users through elimination and provocation phases</li></ul>
-<div class="extra"><ul></ul><div class="chips"><span>Kotlin</span><span>fastlane</span><span>HockeyApp</span></div></div>
-</div></li>
-<li class="tl-item reveal" data-f="android">
-<div class="dot"></div>
-<div class="when">2017 – 2018</div>
-<div class="card"><div class="card-head"><h4>Porsche Press Kit</h4><span class="plat">Android</span></div>
-<p class="org">Android Developer</p>
-<ul><li>Built an offline-first press-event app with server sync, zip packages, offline video and event switching</li></ul>
-<div class="extra"><ul><li>Set up GitLab CI, fastlane, SonarQube and Cucumber tests for the project</li></ul><div class="chips"><span>Java</span><span>GitLab CI</span><span>fastlane</span><span>SonarQube</span></div></div>
-<button class="more" aria-expanded="false">+ 1 more</button></div></li>
-<li class="tl-item reveal" data-f="android">
-<div class="dot"></div>
-<div class="when">2016 – 2017</div>
-<div class="card"><div class="card-head"><h4>ZEISS in-store lens app</h4><span class="plat">Android</span></div>
-<p class="org">Android Developer</p>
-<ul><li>Built real-time camera filters with OpenGL shaders to simulate eyeglass lens distortion, coatings and tints</li></ul>
-<div class="extra"><ul><li>Profiled GPU memory with Android Profiler and fixed leaks in the OpenGL camera rendering pipeline</li></ul><div class="chips"><span>Java</span><span>OpenGL ES</span><span>GPUImage</span></div></div>
-<button class="more" aria-expanded="false">+ 1 more</button></div></li>
-<li class="tl-item pos reveal" data-f="android ios">
+<div class="pos-wrap"><div class="card pos-card"><h3>Senior Mobile Developer</h3><p class="org">BUZZWOO! GmbH &amp; Co. KG</p>
+<p class="where">Chiang Mai, Thailand · Remote with German teams · client apps for German, Swiss and Thai brands</p><ul><li>Mentored two mid-level Flutter developers and one Flutter intern through code review, onboarding and project handovers</li><li>Built the company&#x27;s Claude Code mobile plugin for all mobile developers: an iOS–Android feature-transposition skill and parity auditor</li><li>Authored the company Android Kotlin style guide and project template (MVVM, Dagger, CI, fastlane track promotion)</li><li>Maintained Apple Enterprise signing infrastructure with fastlane match for 16 in-house and client apps</li><li>Set up GitLab CI and fastlane release pipelines across Android, iOS and Flutter client apps</li></ul></div><div class="sub"><h5>Selected projects at BUZZWOO!</h5><div class="feats"><article class="card feat reveal" data-f="ai android ios">
+<div class="card-head"><h4>RLAX</h4><span class="plat">Android · iOS · 2020 – 2026</span></div>
+<p class="org">Lead Android Developer, iOS contributor · at BUZZWOO! <a class="ext" href="https://rlax.com" target="_blank" rel="noopener">rlax.com ↗</a></p>
+<ul><li>Built the RLAX Android app and maintained it through 73 Play Store releases (4.9-star rating, 10K+ downloads)</li><li>Co-developed SwiftUI features and App Store releases for the iOS app (10.5K downloads in 2026)</li></ul>
+<div class="extra"><ul><li>Cut Google Play user-perceived crash rate from 11% to 1.5% by triaging Sentry reports and fixing root causes</li><li>Integrated Omise card payments end to end into the RLAX Android booking flow</li><li>Migrated XML and Fragment screens to Jetpack Compose and built the Home Care booking vertical in Compose</li><li>Fixed cold-start, Compose list-key and fragment-lifecycle crashes, then added a startup test to catch regressions</li><li>Built in-app chat with Firestore, push notifications, deep links and read receipts</li><li>Built a Play vitals tool that clusters crashes and ANRs per build, then fixed the app&#x27;s largest crash cluster</li><li>Modernized the build with a version catalog, detekt and lint baselines, targetSdk 36 and 16 KB page-size compliance</li></ul></div>
+<div class="chips"><span>Kotlin</span><span>Coroutines</span><span>Jetpack Compose</span><span>MVVM</span><span>Dagger</span><span>Retrofit</span><span>Firebase</span><span>Omise</span><span>Swift</span><span>SwiftUI</span></div>
+<div class="foot"><span class="badges"><a class="badge" href="https://play.google.com/store/apps/details?id=de.buzzwoo.rlax" target="_blank" rel="noopener">▶ Google Play</a></span><button class="more" aria-expanded="false">+ 7 more</button></div></article><article class="card feat reveal" data-f="ai android ios">
+<div class="card-head"><h4>Youth football training app, pre-launch, Germany</h4><span class="plat">iOS · Android · 2026</span></div>
+<p class="org">Lead Mobile Developer · at BUZZWOO! </p>
+<ul><li>Led native iOS and Android delivery for a youth football training product in a four-person team (PM, backend, two mobile)</li><li>Co-designed drill API contracts with the backend developer, then built server-driven training plans and benchmark tests on iOS and Android</li></ul>
+<div class="extra"><ul><li>Authored all 65 architecture decision records, driving choices from server-driven drills and locale handling to error flows</li><li>Delivered iOS and Android features in parallel by directing seven Claude Code agents from reviewed plans and ADRs</li><li>Reviewed 71 teammate merge requests; median review turnaround fell from 24 hours to under 2 hours after adding automated review</li><li>Integrated subscriptions with RevenueCat, StoreKit and Play Billing, plus push notifications and a native video player</li><li>Built an error-handling system with an error matrix and dedicated error screens on both platforms</li></ul></div>
+<div class="chips"><span>SwiftUI</span><span>Jetpack Compose</span><span>RevenueCat</span><span>Firebase Cloud Messaging</span><span>fastlane</span></div>
+<div class="foot"><button class="more" aria-expanded="false">+ 5 more</button></div></article><article class="card feat reveal" data-f="ai android flutter ios">
+<div class="card-head"><h4>Meet Your Master</h4><span class="plat">Flutter · iOS · Android · 2024 – 2026</span></div>
+<p class="org">Lead Flutter Developer · at BUZZWOO! <a class="ext" href="https://meetyourmaster.de" target="_blank" rel="noopener">meetyourmaster.de ↗</a></p>
+<ul><li>Built the video-learning app from the first commit through its production 2.0 launch</li><li>Implemented subscriptions and per-course purchases on both stores, plus encrypted offline video downloads</li></ul>
+<div class="extra"><ul><li>Shipped on-device ML Kit text recognition that reads redeem codes from the camera, plus social sign-in and Chromecast</li></ul></div>
+<div class="chips"><span>Flutter</span><span>Clean Architecture</span><span>in-app purchases</span><span>better_player</span><span>OneSignal</span><span>google_mlkit_text_recognition</span></div>
+<div class="foot"><span class="badges"><a class="badge" href="https://play.google.com/store/apps/details?id=com.meetyourmaster.app" target="_blank" rel="noopener">▶ Google Play</a><a class="badge" href="https://apps.apple.com/app/id1437803703" target="_blank" rel="noopener">App Store ↗</a></span><button class="more" aria-expanded="false">+ 1 more</button></div></article></div><h5>More projects at BUZZWOO! <span class="hint">tap to expand</span></h5><div class="rows"><details class="row reveal" data-f="android ios kmp">
+<summary><span class="yr">2026</span><span class="nm">DoenerCheck</span>
+<span class="rl">Mobile Developer (project takeover)</span><span class="plat">KMP · iOS · Android</span></summary>
+<div class="row-body"><p class="org"><a class="ext" href="https://doenercheck.app" target="_blank" rel="noopener">doenercheck.app ↗</a></p>
+<ul><li>Took over a Kotlin Multiplatform app from another agency, re-homing APIs and replacing Sentry with Firebase Crashlytics</li><li>Added Firebase push on both platforms and set up dev/prod flavors, Kover coverage and unit tests</li><li>Set up fastlane delivery to TestFlight, Firebase App Distribution and Google Play</li></ul><div class="chips"><span>Kotlin Multiplatform</span><span>Ktor</span><span>SQLDelight</span><span>SwiftUI</span><span>Jetpack Compose</span><span>Koin</span></div></div>
+</details><details class="row reveal" data-f="android flutter ios">
+<summary><span class="yr">2025</span><span class="nm">Bedtime Donations</span>
+<span class="rl">Sole Flutter Developer</span><span class="plat">Flutter · iOS · Android</span></summary>
+<div class="row-body"><p class="org"><a class="ext" href="https://bedtime-donations.com" target="_blank" rel="noopener">bedtime-donations.com ↗</a></p>
+<ul><li>Built a Royal Society for Blind Children (UK) app where volunteers record bedtime stories as audiobooks for blind children</li><li>Developed the app alone from first commit to App Store and Google Play release (5K+ iOS, 1K+ Android downloads)</li><li>Built an EPUB reader that records the user&#x27;s voice with sentence highlighting, plus an audiobook player with lock-screen controls</li></ul><div class="chips"><span>Flutter</span><span>GetX</span><span>just_audio</span><span>ffmpeg</span><span>Firebase</span></div><span class="badges"><a class="badge" href="https://play.google.com/store/apps/details?id=de.buzzwoo.BedtimeDonations" target="_blank" rel="noopener">▶ Google Play</a><a class="badge" href="https://apps.apple.com/app/id6751262460" target="_blank" rel="noopener">App Store ↗</a></span></div>
+</details><details class="row reveal" data-f="android flutter ios">
+<summary><span class="yr">2024 – 2026</span><span class="nm">Stuwe</span>
+<span class="rl">Flutter Developer (project takeover)</span><span class="plat">Flutter · iOS · Android</span></summary>
+<div class="row-body"><p class="org"><a class="ext" href="https://my-stuwe.de" target="_blank" rel="noopener">my-stuwe.de ↗</a></p>
+<ul><li>Maintained the Flutter canteen app for about 1.3K active Android devices, mostly in Germany, across 2024–2026 releases</li><li>Fixed a production crash with a schema probe tool and a 68-check regression harness</li><li>Brought the Android build to API 36 and 16 KB page-size compliance</li></ul><div class="chips"><span>Flutter</span><span>Firebase App Distribution</span></div><span class="badges"><a class="badge" href="https://apps.apple.com/app/id1411417238" target="_blank" rel="noopener">App Store ↗</a></span></div>
+</details><details class="row reveal" data-f="android flutter ios">
+<summary><span class="yr">2022 – 2026</span><span class="nm">ORS</span>
+<span class="rl">Lead Flutter Developer</span><span class="plat">Flutter · iOS · Android</span></summary>
+<div class="row-body">
+<ul><li>Built a resident app in 13 languages, including right-to-left Arabic and Farsi, with in-app QR scanning</li><li>Set up fastlane, App Center and push notifications, then prepared the handover to the client&#x27;s team</li></ul><div class="chips"><span>Flutter</span><span>Firebase Cloud Messaging</span><span>QR scanning</span><span>fastlane</span></div></div>
+</details><details class="row reveal" data-f="flutter">
+<summary><span class="yr">2022 – 2023</span><span class="nm">Tidely</span>
+<span class="rl">Flutter Developer</span><span class="plat">Flutter · Web</span></summary>
+<div class="row-body"><p class="org"><a class="ext" href="https://tidely.com" target="_blank" rel="noopener">tidely.com ↗</a></p>
+<ul><li>Built the dashboard, cash-flow forecast and invoice transaction features of a liquidity-planning web app for German SMEs</li><li>Joined Tidely&#x27;s in-house product team as one of two BUZZWOO! Flutter developers on yearly contracts</li><li>Simulated the backend on a Docker test server to build and verify features, tracked in JIRA and Bitbucket</li></ul><div class="chips"><span>Flutter Web</span><span>Dart</span><span>Docker</span><span>JIRA</span><span>Bitbucket</span></div></div>
+</details><details class="row reveal" data-f="android flutter ios">
+<summary><span class="yr">2020 – 2023</span><span class="nm">RLAX Therapist</span>
+<span class="rl">Lead Flutter Developer</span><span class="plat">Flutter · iOS · Android</span></summary>
+<div class="row-body">
+<ul><li>Created the therapist-side Flutter app and shipped 64 production releases to App Store and Google Play</li><li>Built job broadcast and PromptPay QR payments, letting therapists accept bookings and get paid in-app</li><li>Added Gherkin BDD tests, SonarQube and a GitLab CI pipeline with staging and production lanes</li></ul><div class="chips"><span>Flutter</span><span>BLoC</span><span>get_it</span><span>freezed</span><span>Hive</span><span>fastlane</span></div></div>
+</details><details class="row reveal" data-f="android">
+<summary><span class="yr">2019 – 2023</span><span class="nm">Nubert nuReality</span>
+<span class="rl">Lead Android Developer</span><span class="plat">Android</span></summary>
+<div class="row-body"><p class="org"><a class="ext" href="https://nubert.de/en" target="_blank" rel="noopener">nubert.de/en ↗</a></p>
+<ul><li>Took an AR speaker-placement prototype to a Google Play release (5K+ downloads) and maintained it for four years</li><li>Fixed recurring memory leaks in AR speaker rendering by optimising 3D model textures and shaders</li><li>Built 3D model placement with move, rotate and scale gestures using ARCore and Sceneform</li><li>Built custom animations for the AR speaker-placement app</li></ul><div class="chips"><span>Kotlin</span><span>ARCore</span><span>Sceneform</span><span>MVVM</span><span>Dagger</span><span>Room</span></div></div>
+</details><details class="row reveal" data-f="android">
+<summary><span class="yr">2018 – 2019</span><span class="nm">ImuPro</span>
+<span class="rl">Android Developer</span><span class="plat">Android</span></summary>
+<div class="row-body"><p class="org"><a class="ext" href="https://imupro.sg" target="_blank" rel="noopener">imupro.sg ↗</a></p>
+<ul><li>Built a Kotlin diet app that imports test results by QR code and guides users through elimination and provocation phases</li></ul><div class="chips"><span>Kotlin</span><span>fastlane</span><span>HockeyApp</span></div></div>
+</details><details class="row reveal" data-f="android">
+<summary><span class="yr">2017 – 2020</span><span class="nm">Tele 5 (5flix)</span>
+<span class="rl">Android Developer</span><span class="plat">Android · tvOS</span></summary>
+<div class="row-body"><p class="org"><a class="ext" href="https://tele5.de" target="_blank" rel="noopener">tele5.de ↗</a></p>
+<ul><li>Built login, tablet layouts, IMA video ads, privacy center and Chromecast support for a Kotlin streaming app</li><li>Set up GitLab CI, fastlane and SonarQube, and led the AndroidX migration</li><li>Started an Apple TV client prototype with TVML and Swift</li></ul><div class="chips"><span>Kotlin</span><span>Dagger</span><span>RxJava</span><span>Retrofit</span><span>JW Player</span><span>Chromecast</span></div></div>
+</details><details class="row reveal" data-f="android">
+<summary><span class="yr">2017 – 2018</span><span class="nm">Porsche Press Kit</span>
+<span class="rl">Android Developer</span><span class="plat">Android</span></summary>
+<div class="row-body">
+<ul><li>Built an offline-first press-event app with server sync, zip packages, offline video and event switching</li><li>Set up GitLab CI, fastlane, SonarQube and Cucumber tests for the project</li></ul><div class="chips"><span>Java</span><span>GitLab CI</span><span>fastlane</span><span>SonarQube</span></div></div>
+</details><details class="row reveal" data-f="android">
+<summary><span class="yr">2016 – 2017</span><span class="nm">ZEISS in-store lens app</span>
+<span class="rl">Android Developer</span><span class="plat">Android</span></summary>
+<div class="row-body">
+<ul><li>Built real-time camera filters with OpenGL shaders to simulate eyeglass lens distortion, coatings and tints</li><li>Profiled GPU memory with Android Profiler and fixed leaks in the OpenGL camera rendering pipeline</li></ul><div class="chips"><span>Java</span><span>OpenGL ES</span><span>GPUImage</span></div></div>
+</details></div><p class="empty">No projects match this filter.</p></div></div></li>
+<li class="tl-item pos reveal">
 <div class="dot"></div>
 <div class="when">Oct 2012 – Aug 2016</div>
-<div class="card pos-card"><h3>Mobile Application Developer</h3><p class="org">Cenixoft Co., Ltd.</p>
-<p class="where">Chiang Mai, Thailand</p><ul><li>Built native iOS and Android apps for Thai clients in Objective-C, Swift and Java</li><li>Built BuilkSiteWalk, an iOS construction-site app for sharing on-site issues with the whole project team, plus a residence booking app</li></ul></div></li>
+<div class="pos-wrap"><div class="card pos-card"><h3>Mobile Application Developer</h3><p class="org">Cenixoft Co., Ltd.</p>
+<p class="where">Chiang Mai, Thailand</p><ul><li>Built native iOS and Android apps for Thai clients in Objective-C, Swift and Java</li><li>Built BuilkSiteWalk, an iOS construction-site app for sharing on-site issues with the whole project team, plus a residence booking app</li></ul></div></div></li>
 </ul></section>
-<section id="skills"><h2>Skills</h2><div class="skills"><div class="skill reveal"><h3>Languages</h3><div><span>Kotlin</span><span>Swift</span><span>Dart</span><span>Java</span><span>Objective-C</span></div></div><div class="skill reveal"><h3>Mobile UI</h3><div><span>Jetpack Compose</span><span>SwiftUI</span><span>Flutter</span><span>Flutter Web</span><span>Android Views</span><span>UIKit</span></div></div><div class="skill reveal"><h3>Architecture</h3><div><span>MVVM</span><span>Clean Architecture</span><span>BLoC</span><span>Provider / Riverpod</span><span>Kotlin Multiplatform (KMM/KMP)</span><span>Dependency injection (Dagger, Koin)</span><span>Modularization</span><span>Server-driven UI</span></div></div><div class="skill reveal"><h3>Data &amp; Networking</h3><div><span>Retrofit</span><span>Ktor</span><span>SQLDelight</span><span>Room</span><span>Firebase</span><span>REST APIs / JSON</span><span>OAuth</span><span>Offline support</span><span>Push notifications (FCM)</span><span>In-app purchases (StoreKit, Play Billing, RevenueCat)</span><span>Payments (Omise, PromptPay)</span><span>Deep links</span></div></div><div class="skill reveal"><h3>Concurrency &amp; Testing</h3><div><span>Kotlin Coroutines &amp; Flow</span><span>Swift Concurrency (async/await)</span><span>XCTest</span><span>JUnit</span><span>Compose UI tests</span><span>Flutter widget &amp; unit tests</span><span>BDD (Gherkin)</span></div></div><div class="skill reveal"><h3>CI/CD &amp; Release</h3><div><span>fastlane</span><span>GitLab CI</span><span>Gradle (build variants, flavors)</span><span>Google Play Console</span><span>App Store Connect</span><span>Firebase App Distribution</span><span>SonarQube</span><span>Git</span></div></div><div class="skill reveal"><h3>Monitoring &amp; Analytics</h3><div><span>Firebase Crashlytics</span><span>Sentry</span><span>Firebase Analytics, Mixpanel</span><span>Performance monitoring</span><span>Android Studio Profiler</span><span>Memory leak analysis</span><span>Crash &amp; ANR analysis (Play vitals)</span></div></div><div class="skill reveal"><h3>Ways of Working</h3><div><span>Agile / Scrum</span><span>JIRA</span><span>Bitbucket</span><span>Docker (local test servers)</span><span>Code review</span><span>Architecture decision records</span></div></div><div class="skill reveal"><h3>AI-assisted Development</h3><div><span>Claude Code (custom plugin, skills, agents, hooks)</span><span>AI-assisted code review (GitLab)</span><span>Multi-agent workflows</span><span>Figma MCP (hi-fi design checks, pixel-perfect design-to-code)</span></div></div><div class="skill reveal"><h3>AI in Apps</h3><div><span>On-device ML (Google ML Kit text recognition)</span><span>AR &amp; camera (ARCore, OpenGL ES shaders)</span></div></div></div></section>
+<section id="skills"><h2>Skills</h2><div class="core reveal"><h3>Core</h3><div><span>Kotlin</span><span>Swift</span><span>Jetpack Compose</span><span>SwiftUI</span><span>Flutter</span><span>Kotlin Multiplatform (KMM/KMP)</span><span>Kotlin Coroutines &amp; Flow</span><span>Clean Architecture</span><span>MVVM</span><span>Server-driven UI</span><span>fastlane</span><span>Claude Code (custom plugin, skills, agents, hooks)</span></div></div>
+<details class="all-skills"><summary>Show all skills</summary><div class="skills"><div class="skill reveal"><h3>Languages</h3><div><span>Kotlin</span><span>Swift</span><span>Dart</span><span>Java</span><span>Objective-C</span></div></div><div class="skill reveal"><h3>Mobile UI</h3><div><span>Jetpack Compose</span><span>SwiftUI</span><span>Flutter</span><span>Flutter Web</span><span>Android Views</span><span>UIKit</span></div></div><div class="skill reveal"><h3>Architecture</h3><div><span>MVVM</span><span>Clean Architecture</span><span>BLoC</span><span>Provider / Riverpod</span><span>Kotlin Multiplatform (KMM/KMP)</span><span>Dependency injection (Dagger, Koin)</span><span>Modularization</span><span>Server-driven UI</span></div></div><div class="skill reveal"><h3>Data &amp; Networking</h3><div><span>Retrofit</span><span>Ktor</span><span>SQLDelight</span><span>Room</span><span>Firebase</span><span>REST APIs / JSON</span><span>OAuth</span><span>Offline support</span><span>Push notifications (FCM)</span><span>In-app purchases (StoreKit, Play Billing, RevenueCat)</span><span>Payments (Omise, PromptPay)</span><span>Deep links</span></div></div><div class="skill reveal"><h3>Concurrency &amp; Testing</h3><div><span>Kotlin Coroutines &amp; Flow</span><span>Swift Concurrency (async/await)</span><span>XCTest</span><span>JUnit</span><span>Compose UI tests</span><span>Flutter widget &amp; unit tests</span><span>BDD (Gherkin)</span></div></div><div class="skill reveal"><h3>CI/CD &amp; Release</h3><div><span>fastlane</span><span>GitLab CI</span><span>Gradle (build variants, flavors)</span><span>Google Play Console</span><span>App Store Connect</span><span>Firebase App Distribution</span><span>SonarQube</span><span>Git</span></div></div><div class="skill reveal"><h3>Monitoring &amp; Analytics</h3><div><span>Firebase Crashlytics</span><span>Sentry</span><span>Firebase Analytics, Mixpanel</span><span>Performance monitoring</span><span>Android Studio Profiler</span><span>Memory leak analysis</span><span>Crash &amp; ANR analysis (Play vitals)</span></div></div><div class="skill reveal"><h3>Ways of Working</h3><div><span>Agile / Scrum</span><span>JIRA</span><span>Bitbucket</span><span>Docker (local test servers)</span><span>Code review</span><span>Architecture decision records</span></div></div><div class="skill reveal"><h3>AI-assisted Development</h3><div><span>Claude Code (custom plugin, skills, agents, hooks)</span><span>AI-assisted code review (GitLab)</span><span>Multi-agent workflows</span><span>Figma MCP (hi-fi design checks, pixel-perfect design-to-code)</span></div></div><div class="skill reveal"><h3>AI in Apps</h3><div><span>On-device ML (Google ML Kit text recognition)</span><span>AR &amp; camera (ARCore, OpenGL ES shaders)</span></div></div></div></details></section>
 <section id="more"><h2>Education &amp; more</h2><div class="facts"><div class="skill reveal"><h3>Education</h3><p>B.S. Software Engineering<br><span class="org">Chiang Mai University · 2009 – 2012</span></p></div><div class="skill reveal"><h3>Award</h3><p>Best Innovation, 2012<br><span class="org">International ICT Innovative Services Contest, National Taiwan University: iAirPollution iOS app</span></p></div><div class="skill reveal"><h3>Languages</h3><p>Thai (Native), English (Professional working proficiency)</p></div></div></section>
 </main>
 <footer>Built from the same data as my PDF CV · Chiang Mai, Thailand (UTC+7)</footer>
 <script>
-const items=[...document.querySelectorAll('.tl-item')];
+const items=[...document.querySelectorAll('[data-f]')].filter(x=>!x.matches('.filters button'));
 document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{
   document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed',x===b));
   const f=b.dataset.f;
-  items.forEach(it=>it.classList.toggle('hide',f!=='all'&&!it.classList.contains('pos')&&!it.dataset.f.split(' ').includes(f)));
+  items.forEach(it=>it.classList.toggle('hide',f!=='all'&&!it.dataset.f.split(' ').includes(f)));
+  document.querySelectorAll('.sub').forEach(s=>{
+    s.classList.toggle('none',!s.querySelector('[data-f]:not(.hide)'));
+    s.querySelectorAll('h5').forEach(h=>{const n=h.nextElementSibling;h.classList.toggle('hide',!n.querySelector('[data-f]:not(.hide)'))});
+  });
 }));
 document.querySelectorAll('.more').forEach(b=>b.addEventListener('click',()=>{
   const c=b.closest('.card'),open=c.classList.toggle('open');
