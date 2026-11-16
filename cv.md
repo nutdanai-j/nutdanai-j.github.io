@@ -47,9 +47,10 @@ Stack: SwiftUI, Jetpack Compose, RevenueCat, Firebase Cloud Messaging, fastlane
 - Built an error-handling system with an error matrix and dedicated error screens on both platforms
 
 **DoenerCheck** · Mobile Developer (project takeover) · KMP · iOS · Android (2026) · doenercheck.app
-Stack: Kotlin Multiplatform, Ktor, SQLDelight, SwiftUI, Jetpack Compose, Koin
+Stack: Kotlin Multiplatform, Ktor, SQLDelight, kotlinx.serialization, SwiftUI, Jetpack Compose, Koin
 - Took over a Kotlin Multiplatform app from another agency, re-homing APIs and replacing Sentry with Firebase Crashlytics
-- Added Firebase push on both platforms and set up dev/prod flavors, Kover coverage and unit tests
+- Fixed shared KMP networking and error handling, including Ktor timeouts, and added unit tests for the shared modules
+- Added Firebase push on both platforms and set up dev/prod flavors and Kover coverage
 - Set up fastlane delivery to TestFlight, Firebase App Distribution and Google Play
 
 **Stuwe** · Flutter Developer (project takeover) · Flutter · iOS · Android (2024 – 2026) · my-stuwe.de
@@ -120,7 +121,7 @@ Chiang Mai, Thailand
 - Languages: Kotlin, Swift, Dart, Java, Objective-C
 - Mobile UI: Jetpack Compose, SwiftUI, Flutter, Flutter Web, Android Views, UIKit
 - Architecture: MVVM, Clean Architecture, BLoC, Provider / Riverpod, Kotlin Multiplatform (KMM/KMP), Dependency injection (Dagger, Koin), Modularization, Server-driven UI
-- Data & Networking: Retrofit, Ktor, SQLDelight, Room, Firebase, REST APIs / JSON, OAuth, Offline support, Push notifications (FCM), In-app purchases (StoreKit, Play Billing, RevenueCat), Payments (Omise, PromptPay), Deep links
+- Data & Networking: Retrofit, Ktor, SQLDelight, kotlinx.serialization, Room, Firebase, REST APIs / JSON, OAuth, Offline support, Push notifications (FCM), In-app purchases (StoreKit, Play Billing, RevenueCat), Payments (Omise, PromptPay), Deep links
 - Concurrency & Testing: Kotlin Coroutines & Flow, Swift Concurrency (async/await), XCTest, JUnit, Compose UI tests, Flutter widget & unit tests, BDD (Gherkin)
 - CI/CD & Release: fastlane, GitLab CI, Gradle (build variants, flavors), Google Play Console, App Store Connect, Firebase App Distribution, SonarQube, Git
 - Monitoring & Analytics: Firebase Crashlytics, Sentry, Firebase Analytics, Mixpanel, Performance monitoring, Android Studio Profiler, Memory leak analysis, Crash & ANR analysis (Play vitals)

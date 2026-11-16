@@ -142,13 +142,15 @@
       "url": "https://doenercheck.app",
       "highlights": [
         "Took over a Kotlin Multiplatform app from another agency, re-homing APIs and replacing Sentry with Firebase Crashlytics",
-        "Added Firebase push on both platforms and set up dev/prod flavors, Kover coverage and unit tests",
+        "Fixed shared KMP networking and error handling, including Ktor timeouts, and added unit tests for the shared modules",
+        "Added Firebase push on both platforms and set up dev/prod flavors and Kover coverage",
         "Set up fastlane delivery to TestFlight, Firebase App Distribution and Google Play"
       ],
       "keywords": [
         "Kotlin Multiplatform",
         "Ktor",
         "SQLDelight",
+        "kotlinx.serialization",
         "SwiftUI",
         "Jetpack Compose",
         "Koin"
@@ -424,6 +426,7 @@
         "Retrofit",
         "Ktor",
         "SQLDelight",
+        "kotlinx.serialization",
         "Room",
         "Firebase",
         "REST APIs / JSON",
