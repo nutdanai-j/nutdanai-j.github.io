@@ -66,12 +66,6 @@ h2{font-size:1.6rem;margin:0 0 1rem;letter-spacing:-.01em}
 .chips span,.skill>div span{background:var(--chip);border-radius:6px;padding:.15rem .55rem;font-size:.8rem}
 .more{margin-top:.5rem;background:none;border:0;color:var(--accent);font:inherit;font-size:.88rem;cursor:pointer;padding:0}
 .pos-wrap{min-width:0}
-.apps-sec{padding-top:24px}
-.apps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.app{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:10px}
-.app .icon{width:52px;height:52px;border-radius:13px;color:#fff;display:grid;place-items:center;font-weight:700;font-size:1.15rem;letter-spacing:.02em}
-.app h4{margin:0;font-size:1rem}.app .lbl{margin:.15rem 0 .35rem;color:var(--muted);font-size:.82rem;line-height:1.4}
-.app .metric{margin:0 0 .6rem;font-weight:600;font-size:.88rem}
 .sub{margin:14px 0 0 18px;padding-left:18px;border-left:2px dashed var(--line)}
 .sub h5{margin:18px 0 10px;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
 .hint{text-transform:none;letter-spacing:0;font-weight:400}
@@ -88,6 +82,7 @@ h2{font-size:1.6rem;margin:0 0 1rem;letter-spacing:-.01em}
 .row .yr{color:var(--muted);font-size:.85rem;font-variant-numeric:tabular-nums}
 .row .nm{font-weight:600}.row .rl{grid-column:2;color:var(--muted);font-size:.85rem}
 .row .plat{grid-row:1;grid-column:3}
+.row .mini{grid-column:3;text-align:right;font-size:.8rem}.row .mini a{text-decoration:none}
 .row[open]{border-color:var(--accent)}
 .row-body{padding:0 14px 12px 122px}.row-body ul{margin:.2rem 0;padding-left:1.1rem}
 .empty{display:none;color:var(--muted);font-size:.9rem}
@@ -108,11 +103,10 @@ footer{padding:48px 0 64px;color:var(--muted);font-size:.85rem;text-align:center
 .js .reveal{opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease}
 .js .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
-@media (max-width:860px){.apps{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;margin-right:-24px;padding-right:24px}.app{flex:0 0 220px;scroll-snap-align:start}}
 @media (max-width:640px){nav .links{display:none}
  .stats{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin-right:-24px;padding-right:24px}
  .stat{flex:0 0 44%;scroll-snap-align:start;padding:12px}.stat .num{font-size:1.25rem}
- .sub{margin-left:0;padding-left:12px}.row summary{grid-template-columns:1fr auto}.row .yr{grid-column:1/-1}.row .rl{grid-column:1}.row .plat{grid-row:auto;grid-column:2}.row-body{padding-left:14px}
+ .sub{margin-left:0;padding-left:12px}.row summary{grid-template-columns:1fr auto}.row .yr{grid-column:1/-1}.row .rl{grid-column:1}.row .plat{grid-row:auto;grid-column:2}.row-body{padding-left:14px}.row .mini{grid-column:1/-1;text-align:left}
  .timeline:before{left:7px}.tl-item{grid-template-columns:1fr;gap:4px;padding-left:28px}
  .tl-item .when{text-align:left;padding-top:0}.tl-item .dot{left:1px;top:4px}.tl-item.pos .dot{left:-2px;top:2px}}
 @media print{nav,.filters,.more,.btn,.badges{display:none}.js .reveal{opacity:1;transform:none}.extra{max-height:none}}
@@ -120,7 +114,7 @@ footer{padding:48px 0 64px;color:var(--muted);font-size:.85rem;text-align:center
 </head>
 <body>
 <nav><div class="in"><a class="brand" href="#top">Nutdanai Jantarawong</a>
-<span class="links"><a href="#apps">Apps</a> <a href="#journey">Journey</a> <a href="#skills">Skills</a> <a href="#contact">Contact</a></span>
+<span class="links"><a href="#journey">Journey</a> <a href="#skills">Skills</a> <a href="#contact">Contact</a></span>
 <a href="Nutdanai_Jantarawong_CV.pdf">PDF</a></div></nav>
 <header class="wrap hero" id="top">
 <h1>Nutdanai Jantarawong</h1>
@@ -132,16 +126,6 @@ footer{padding:48px 0 64px;color:var(--muted);font-size:.85rem;text-align:center
 <a class="btn" href="Nutdanai_Jantarawong_CV.pdf">Download CV (PDF)</a><a class="btn ghost" href="#journey">See the journey ↓</a>
 <div class="stats"><div class="stat reveal"><span class="num">14</span><span class="lbl">years building mobile apps</span></div><div class="stat reveal"><span class="num">73</span><span class="lbl">Play Store releases of RLAX</span></div><div class="stat reveal"><span class="num">4.9★</span><span class="lbl">RLAX rating, 10K+ downloads</span></div><div class="stat reveal"><span class="num">11% → 1.5%</span><span class="lbl">crash rate cut on RLAX</span></div><div class="stat reveal"><span class="num">65</span><span class="lbl">architecture decisions documented</span></div></div>
 </header>
-<section class="wrap apps-sec" id="apps"><h2>Apps you can try</h2>
-<div class="apps"><article class="app reveal"><div class="icon" style="background:#111827">R</div>
-<div><h4>RLAX</h4><p class="lbl">On-demand wellness booking app (Thailand)</p><p class="metric">10K+ downloads · 4.9★</p>
-<span class="badges"><a class="badge" href="https://play.google.com/store/apps/details?id=de.buzzwoo.rlax" target="_blank" rel="noopener">▶ Google Play</a></span></div></article><article class="app reveal"><div class="icon" style="background:#0f766e">BD</div>
-<div><h4>Bedtime Donations</h4><p class="lbl">Audiobook donation app for a UK charity for blind children</p><p class="metric">5K+ iOS · 1K+ Android</p>
-<span class="badges"><a class="badge" href="https://play.google.com/store/apps/details?id=de.buzzwoo.BedtimeDonations" target="_blank" rel="noopener">▶ Google Play</a><a class="badge" href="https://apps.apple.com/app/id6751262460" target="_blank" rel="noopener">App Store ↗</a></span></div></article><article class="app reveal"><div class="icon" style="background:#ca8a04">NN</div>
-<div><h4>Nubert nuReality</h4><p class="lbl">AR speaker catalogue app for a German audio brand</p><p class="metric">5K+ downloads · AR</p>
-<span class="badges"><a class="badge" href="https://play.google.com/store/apps/details?id=de.nubert.ar.app" target="_blank" rel="noopener">▶ Google Play</a></span></div></article><article class="app reveal"><div class="icon" style="background:#7c3aed">MM</div>
-<div><h4>Meet Your Master</h4><p class="lbl">Video-learning masterclass app (Germany)</p><p class="metric">Subscriptions · ML Kit</p>
-<span class="badges"><a class="badge" href="https://play.google.com/store/apps/details?id=com.meetyourmaster.app" target="_blank" rel="noopener">▶ Google Play</a><a class="badge" href="https://apps.apple.com/app/id1437803703" target="_blank" rel="noopener">App Store ↗</a></span></div></article></div></section>
 <main class="wrap">
 <section id="journey"><h2>Career journey</h2>
 <div class="filters" role="toolbar" aria-label="Filter projects"><button data-f="all" aria-pressed="true">All</button><button data-f="android" aria-pressed="false">Android</button><button data-f="ios" aria-pressed="false">iOS</button><button data-f="flutter" aria-pressed="false">Flutter</button><button data-f="kmp" aria-pressed="false">KMP</button><button data-f="ai" aria-pressed="false">AI</button></div>
@@ -150,7 +134,19 @@ footer{padding:48px 0 64px;color:var(--muted);font-size:.85rem;text-align:center
 <div class="dot"></div>
 <div class="when">Sep 2016 – Present</div>
 <div class="pos-wrap"><div class="card pos-card"><h3>Senior Mobile Developer</h3><p class="org">BUZZWOO! GmbH &amp; Co. KG</p>
-<p class="where">Chiang Mai, Thailand · Remote with German teams · client apps for German, Swiss and Thai brands</p><ul><li>Mentored two mid-level Flutter developers and one Flutter intern through code review, onboarding and project handovers</li><li>Built the company&#x27;s Claude Code mobile plugin for all mobile developers: an iOS–Android feature-transposition skill and parity auditor</li><li>Authored the company Android Kotlin style guide and project template (MVVM, Dagger, CI, fastlane track promotion)</li></ul><div class="extra"><ul><li>Maintained Apple Enterprise signing infrastructure with fastlane match for 16 in-house and client apps</li><li>Set up GitLab CI and fastlane release pipelines across Android, iOS and Flutter client apps</li></ul></div><button class="more" aria-expanded="false">+ 2 more</button></div><div class="sub"><h5>Highlighted project at BUZZWOO!</h5><div class="feats"><article class="card feat reveal" data-f="ai android ios">
+<p class="where">Chiang Mai, Thailand · Remote with German teams · client apps for German, Swiss and Thai brands</p><ul><li>Mentored two mid-level Flutter developers and one Flutter intern through code review, onboarding and project handovers</li><li>Built the company&#x27;s Claude Code mobile plugin for all mobile developers: an iOS–Android feature-transposition skill and parity auditor</li><li>Authored the company Android Kotlin style guide and project template (MVVM, Dagger, CI, fastlane track promotion)</li></ul><div class="extra"><ul><li>Maintained Apple Enterprise signing infrastructure with fastlane match for 16 in-house and client apps</li><li>Set up GitLab CI and fastlane release pipelines across Android, iOS and Flutter client apps</li></ul></div><button class="more" aria-expanded="false">+ 2 more</button></div><div class="sub"><h5>Highlighted projects at BUZZWOO!</h5><div class="feats"><article class="card feat reveal" data-f="ai android ios">
+<div class="card-head"><h4>RLAX</h4><span class="plat">Android · iOS · 2020 – 2026</span></div>
+<p class="org">Lead Android Developer, iOS contributor · at BUZZWOO! <a class="ext" href="https://rlax.com" target="_blank" rel="noopener">rlax.com ↗</a></p>
+<ul><li>Built BUZZWOO!&#x27;s in-house wellness booking app RLAX on Android, shipping 73 Play Store releases (4.9-star rating, 10K+ downloads)</li><li>Co-developed SwiftUI features and App Store releases for the iOS app (10.5K downloads in 2026)</li></ul>
+<div class="extra"><ul><li>Cut Google Play user-perceived crash rate from 11% to 1.5% by triaging Sentry reports and fixing root causes</li><li>Integrated Omise card payments end to end into the RLAX Android booking flow</li><li>Migrated XML and Fragment screens to Jetpack Compose and built the Home Care booking vertical in Compose</li><li>Fixed cold-start, Compose list-key and fragment-lifecycle crashes, then added a startup test to catch regressions</li><li>Built in-app chat with Firestore, push notifications, deep links and read receipts</li><li>Built a Play vitals tool that clusters crashes and ANRs per build, then fixed the app&#x27;s largest crash cluster</li><li>Modernized the build with a version catalog, detekt and lint baselines, targetSdk 36 and 16 KB page-size compliance</li></ul></div>
+<div class="chips"><span>Kotlin</span><span>Coroutines</span><span>Jetpack Compose</span><span>MVVM</span><span>Dagger</span><span>Retrofit</span><span>Firebase</span><span>Omise</span><span>Swift</span><span>SwiftUI</span></div>
+<div class="foot"><span class="badges"><a class="badge" href="https://play.google.com/store/apps/details?id=de.buzzwoo.rlax" target="_blank" rel="noopener">▶ Google Play</a></span><button class="more" aria-expanded="false">+ 7 more</button></div></article><article class="card feat reveal" data-f="android flutter ios">
+<div class="card-head"><h4>Bedtime Donations</h4><span class="plat">Flutter · iOS · Android · 2025</span></div>
+<p class="org">Sole Flutter Developer · at BUZZWOO! <a class="ext" href="https://bedtime-donations.com" target="_blank" rel="noopener">bedtime-donations.com ↗</a></p>
+<ul><li>Built a Royal Society for Blind Children (UK) app where volunteers record bedtime stories as audiobooks for blind children</li><li>Developed the app alone from first commit to App Store and Google Play release (5K+ iOS, 1K+ Android downloads)</li></ul>
+<div class="extra"><ul><li>Built an EPUB reader that records the user&#x27;s voice with sentence highlighting, plus an audiobook player with lock-screen controls</li></ul></div>
+<div class="chips"><span>Flutter</span><span>GetX</span><span>just_audio</span><span>ffmpeg</span><span>Firebase</span></div>
+<div class="foot"><span class="badges"><a class="badge" href="https://play.google.com/store/apps/details?id=de.buzzwoo.BedtimeDonations" target="_blank" rel="noopener">▶ Google Play</a><a class="badge" href="https://apps.apple.com/app/id6751262460" target="_blank" rel="noopener">App Store ↗</a></span><button class="more" aria-expanded="false">+ 1 more</button></div></article><article class="card feat reveal" data-f="ai android ios">
 <div class="card-head"><h4>Youth football training app, pre-launch, Germany</h4><span class="plat">iOS · Android · 2026</span></div>
 <p class="org">Lead Mobile Developer · at BUZZWOO! </p>
 <ul><li>Led native iOS and Android delivery for a youth football training product in a four-person team (PM, backend, two mobile)</li><li>Co-designed drill API contracts with the backend developer, then built server-driven training plans and benchmark tests on iOS and Android</li></ul>
@@ -162,18 +158,13 @@ footer{padding:48px 0 64px;color:var(--muted);font-size:.85rem;text-align:center
 <div class="row-body"><p class="org"><a class="ext" href="https://doenercheck.app" target="_blank" rel="noopener">doenercheck.app ↗</a></p>
 <ul><li>Took over a Kotlin Multiplatform app from another agency, re-homing APIs and replacing Sentry with Firebase Crashlytics</li><li>Added Firebase push on both platforms and set up dev/prod flavors, Kover coverage and unit tests</li><li>Set up fastlane delivery to TestFlight, Firebase App Distribution and Google Play</li></ul><div class="chips"><span>Kotlin Multiplatform</span><span>Ktor</span><span>SQLDelight</span><span>SwiftUI</span><span>Jetpack Compose</span><span>Koin</span></div></div>
 </details><details class="row reveal" data-f="android flutter ios">
-<summary><span class="yr">2025</span><span class="nm">Bedtime Donations</span>
-<span class="rl">Sole Flutter Developer</span><span class="plat">Flutter · iOS · Android</span></summary>
-<div class="row-body"><p class="org"><a class="ext" href="https://bedtime-donations.com" target="_blank" rel="noopener">bedtime-donations.com ↗</a></p>
-<ul><li>Built a Royal Society for Blind Children (UK) app where volunteers record bedtime stories as audiobooks for blind children</li><li>Developed the app alone from first commit to App Store and Google Play release (5K+ iOS, 1K+ Android downloads)</li><li>Built an EPUB reader that records the user&#x27;s voice with sentence highlighting, plus an audiobook player with lock-screen controls</li></ul><div class="chips"><span>Flutter</span><span>GetX</span><span>just_audio</span><span>ffmpeg</span><span>Firebase</span></div><span class="badges"><a class="badge" href="https://play.google.com/store/apps/details?id=de.buzzwoo.BedtimeDonations" target="_blank" rel="noopener">▶ Google Play</a><a class="badge" href="https://apps.apple.com/app/id6751262460" target="_blank" rel="noopener">App Store ↗</a></span></div>
-</details><details class="row reveal" data-f="android flutter ios">
 <summary><span class="yr">2024 – 2026</span><span class="nm">Stuwe</span>
-<span class="rl">Flutter Developer (project takeover)</span><span class="plat">Flutter · iOS · Android</span></summary>
+<span class="rl">Flutter Developer (project takeover)</span><span class="plat">Flutter · iOS · Android</span><span class="mini"><a href="https://apps.apple.com/app/id1411417238" target="_blank" rel="noopener">App Store</a> ↗</span></summary>
 <div class="row-body"><p class="org"><a class="ext" href="https://my-stuwe.de" target="_blank" rel="noopener">my-stuwe.de ↗</a></p>
 <ul><li>Maintained the Flutter canteen app for about 1.3K active Android devices, mostly in Germany, across 2024–2026 releases</li><li>Fixed a production crash with a schema probe tool and a 68-check regression harness</li><li>Brought the Android build to API 36 and 16 KB page-size compliance</li></ul><div class="chips"><span>Flutter</span><span>Firebase App Distribution</span></div><span class="badges"><a class="badge" href="https://apps.apple.com/app/id1411417238" target="_blank" rel="noopener">App Store ↗</a></span></div>
 </details><details class="row reveal" data-f="ai android flutter ios">
 <summary><span class="yr">2024 – 2026</span><span class="nm">Meet Your Master</span>
-<span class="rl">Lead Flutter Developer</span><span class="plat">Flutter · iOS · Android</span></summary>
+<span class="rl">Lead Flutter Developer</span><span class="plat">Flutter · iOS · Android</span><span class="mini"><a href="https://play.google.com/store/apps/details?id=com.meetyourmaster.app" target="_blank" rel="noopener">Google Play</a> · <a href="https://apps.apple.com/app/id1437803703" target="_blank" rel="noopener">App Store</a> ↗</span></summary>
 <div class="row-body"><p class="org"><a class="ext" href="https://meetyourmaster.de" target="_blank" rel="noopener">meetyourmaster.de ↗</a></p>
 <ul><li>Built the video-learning app from the first commit through its production 2.0 launch</li><li>Implemented subscriptions and per-course purchases on both stores, plus encrypted offline video downloads</li><li>Shipped on-device ML Kit text recognition that reads redeem codes from the camera, plus social sign-in and Chromecast</li></ul><div class="chips"><span>Flutter</span><span>Clean Architecture</span><span>in-app purchases</span><span>Video player (better_player)</span><span>OneSignal</span><span>ML Kit text recognition</span></div><span class="badges"><a class="badge" href="https://play.google.com/store/apps/details?id=com.meetyourmaster.app" target="_blank" rel="noopener">▶ Google Play</a><a class="badge" href="https://apps.apple.com/app/id1437803703" target="_blank" rel="noopener">App Store ↗</a></span></div>
 </details><details class="row reveal" data-f="android flutter ios">
@@ -191,14 +182,9 @@ footer{padding:48px 0 64px;color:var(--muted);font-size:.85rem;text-align:center
 <span class="rl">Lead Flutter Developer</span><span class="plat">Flutter · iOS · Android</span></summary>
 <div class="row-body">
 <ul><li>Created the therapist-side Flutter app and shipped 64 production releases to App Store and Google Play</li><li>Built job broadcast and PromptPay QR payments, letting therapists accept bookings and get paid in-app</li><li>Added Gherkin BDD tests, SonarQube and a GitLab CI pipeline with staging and production lanes</li></ul><div class="chips"><span>Flutter</span><span>BLoC</span><span>get_it</span><span>freezed</span><span>Hive</span><span>fastlane</span></div></div>
-</details><details class="row reveal" data-f="ai android ios">
-<summary><span class="yr">2020 – 2026</span><span class="nm">RLAX</span>
-<span class="rl">Lead Android Developer, iOS contributor</span><span class="plat">Android · iOS</span></summary>
-<div class="row-body"><p class="org"><a class="ext" href="https://rlax.com" target="_blank" rel="noopener">rlax.com ↗</a></p>
-<ul><li>Built BUZZWOO!&#x27;s in-house wellness booking app RLAX on Android, shipping 73 Play Store releases (4.9-star rating, 10K+ downloads)</li><li>Co-developed SwiftUI features and App Store releases for the iOS app (10.5K downloads in 2026)</li><li>Cut Google Play user-perceived crash rate from 11% to 1.5% by triaging Sentry reports and fixing root causes</li><li>Integrated Omise card payments end to end into the RLAX Android booking flow</li><li>Migrated XML and Fragment screens to Jetpack Compose and built the Home Care booking vertical in Compose</li><li>Fixed cold-start, Compose list-key and fragment-lifecycle crashes, then added a startup test to catch regressions</li><li>Built in-app chat with Firestore, push notifications, deep links and read receipts</li><li>Built a Play vitals tool that clusters crashes and ANRs per build, then fixed the app&#x27;s largest crash cluster</li><li>Modernized the build with a version catalog, detekt and lint baselines, targetSdk 36 and 16 KB page-size compliance</li></ul><div class="chips"><span>Kotlin</span><span>Coroutines</span><span>Jetpack Compose</span><span>MVVM</span><span>Dagger</span><span>Retrofit</span><span>Firebase</span><span>Omise</span><span>Swift</span><span>SwiftUI</span></div><span class="badges"><a class="badge" href="https://play.google.com/store/apps/details?id=de.buzzwoo.rlax" target="_blank" rel="noopener">▶ Google Play</a></span></div>
 </details><details class="row reveal" data-f="android">
 <summary><span class="yr">2019 – 2023</span><span class="nm">Nubert nuReality</span>
-<span class="rl">Lead Android Developer</span><span class="plat">Android</span></summary>
+<span class="rl">Lead Android Developer</span><span class="plat">Android</span><span class="mini"><a href="https://play.google.com/store/apps/details?id=de.nubert.ar.app" target="_blank" rel="noopener">Google Play</a> ↗</span></summary>
 <div class="row-body"><p class="org"><a class="ext" href="https://nubert.de/en" target="_blank" rel="noopener">nubert.de/en ↗</a></p>
 <ul><li>Took an AR speaker-placement prototype to a Google Play release (5K+ downloads) and maintained it for four years</li><li>Fixed recurring memory leaks in AR speaker rendering by optimising 3D model textures and shaders</li><li>Built 3D model placement with move, rotate and scale gestures using ARCore and Sceneform</li><li>Built custom animations for the AR speaker-placement app</li></ul><div class="chips"><span>Kotlin</span><span>ARCore</span><span>Sceneform</span><span>MVVM</span><span>Dagger</span><span>Room</span></div><span class="badges"><a class="badge" href="https://play.google.com/store/apps/details?id=de.nubert.ar.app" target="_blank" rel="noopener">▶ Google Play</a></span></div>
 </details><details class="row reveal" data-f="android">
