@@ -1,0 +1,535 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Nutdanai Jantarawong",
+    "label": "Senior Mobile Developer — iOS · Android · Flutter · KMP",
+    "email": "nutdanai.jantarawong@gmail.com",
+    "url": "https://nutdanai-j.github.io/",
+    "summary": "Senior mobile developer with 14 years shipping iOS, Android, Flutter and Kotlin Multiplatform apps for German, Swiss and Thai clients. Built BUZZWOO!'s in-house RLAX booking app on Android (4.9-star rating, 10K+ downloads, 73 releases), mentors Flutter developers and built the company's AI plugin for mobile developers.",
+    "location": {
+      "city": "Chiang Mai",
+      "countryCode": "TH"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "url": "https://linkedin.com/in/nutdanai-jantarawong"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "BUZZWOO! GmbH & Co. KG",
+      "position": "Senior Mobile Developer",
+      "location": "Chiang Mai, Thailand · Remote with German teams · client apps for brands in Germany, Switzerland and the UK, plus in-house products",
+      "startDate": "2016-09",
+      "highlights": [
+        "Mentored two mid-level Flutter developers and one Flutter intern through code review, onboarding and project handovers",
+        "Built the company's Claude Code mobile plugin for all mobile developers: an iOS–Android feature-transposition skill and parity auditor",
+        "Authored the company Android Kotlin style guide and project template (MVVM, Dagger, CI, fastlane track promotion)",
+        "Maintained Apple Enterprise signing infrastructure with fastlane match for 16 in-house and client apps",
+        "Set up GitLab CI and fastlane release pipelines across Android, iOS and Flutter client apps"
+      ]
+    },
+    {
+      "name": "Cenixoft Co., Ltd.",
+      "position": "Mobile Application Developer",
+      "location": "Chiang Mai, Thailand",
+      "startDate": "2012-10",
+      "endDate": "2016-08",
+      "highlights": [
+        "Built native iOS and Android apps for Thai clients in Objective-C, Swift and Java",
+        "Built BuilkSiteWalk, an iOS construction-site app for sharing on-site issues with the whole project team, plus a residence booking app"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "RLAX",
+      "entity": "BUZZWOO! GmbH & Co. KG",
+      "roles": [
+        "Lead Android Developer, iOS contributor"
+      ],
+      "description": "On-demand wellness booking app (Thailand)",
+      "startDate": "2020-06",
+      "endDate": "2026-11",
+      "url": "https://rlax.com",
+      "highlights": [
+        "Built BUZZWOO!'s in-house wellness booking app RLAX on Android, shipping 73 Play Store releases (4.9-star rating, 10K+ downloads)",
+        "Co-developed SwiftUI features and App Store releases for the iOS app (10.5K downloads in 2026)",
+        "Cut Google Play user-perceived crash rate from 11% to 1.5% by triaging Sentry reports and fixing root causes",
+        "Integrated Omise card payments end to end into the RLAX Android booking flow",
+        "Migrated XML and Fragment screens to Jetpack Compose and built the Home Care booking vertical in Compose",
+        "Fixed cold-start, Compose list-key and fragment-lifecycle crashes, then added a startup test to catch regressions",
+        "Built in-app chat with Firestore, push notifications, deep links and read receipts",
+        "Built a Play vitals tool that clusters crashes and ANRs per build, then fixed the app's largest crash cluster",
+        "Modernized the build with a version catalog, detekt and lint baselines, targetSdk 36 and 16 KB page-size compliance"
+      ],
+      "keywords": [
+        "Kotlin",
+        "Coroutines",
+        "Jetpack Compose",
+        "MVVM",
+        "Dagger",
+        "Retrofit",
+        "Firebase",
+        "Omise",
+        "Swift",
+        "SwiftUI"
+      ],
+      "type": "Android · iOS"
+    },
+    {
+      "name": "Bedtime Donations",
+      "entity": "BUZZWOO! GmbH & Co. KG",
+      "roles": [
+        "Sole Flutter Developer"
+      ],
+      "description": "Audiobook donation app for a UK charity for blind children",
+      "startDate": "2025-01",
+      "endDate": "2025-09",
+      "url": "https://bedtime-donations.com",
+      "highlights": [
+        "Built a Royal Society for Blind Children (UK) app where volunteers record bedtime stories as audiobooks for blind children",
+        "Developed the app alone from first commit to App Store and Google Play release (5K+ iOS, 1K+ Android downloads)",
+        "Built an EPUB reader that records the user's voice with sentence highlighting, plus an audiobook player with lock-screen controls"
+      ],
+      "keywords": [
+        "Flutter",
+        "GetX",
+        "just_audio",
+        "ffmpeg",
+        "Firebase"
+      ],
+      "type": "Flutter · iOS · Android"
+    },
+    {
+      "name": "Youth football training app, pre-launch, Germany",
+      "entity": "BUZZWOO! GmbH & Co. KG",
+      "roles": [
+        "Lead Mobile Developer"
+      ],
+      "description": "Youth football training app, pre-launch, Germany",
+      "startDate": "2026-03",
+      "endDate": "2026-11",
+      "highlights": [
+        "Led native iOS and Android delivery for a youth football training product in a four-person team (PM, backend, two mobile)",
+        "Co-designed drill API contracts with the backend developer, then built server-driven training plans and benchmark tests on iOS and Android",
+        "Authored all 65 architecture decision records, driving choices from server-driven drills and locale handling to error flows",
+        "Delivered iOS and Android features in parallel by directing seven Claude Code agents from reviewed plans and ADRs",
+        "Reviewed 71 teammate merge requests; median review turnaround fell from 24 hours to under 2 hours after adding automated review",
+        "Integrated subscriptions with RevenueCat, StoreKit and Play Billing, plus push notifications and a native video player",
+        "Built an error-handling system with an error matrix and dedicated error screens on both platforms"
+      ],
+      "keywords": [
+        "SwiftUI",
+        "Jetpack Compose",
+        "RevenueCat",
+        "Firebase Cloud Messaging",
+        "fastlane"
+      ],
+      "type": "iOS · Android"
+    },
+    {
+      "name": "DoenerCheck",
+      "entity": "BUZZWOO! GmbH & Co. KG",
+      "roles": [
+        "Mobile Developer (project takeover)"
+      ],
+      "description": "Restaurant discovery app (Germany)",
+      "startDate": "2026-02",
+      "endDate": "2026-03",
+      "url": "https://doenercheck.app",
+      "highlights": [
+        "Took over a Kotlin Multiplatform app from another agency, re-homing APIs and replacing Sentry with Firebase Crashlytics",
+        "Added Firebase push on both platforms and set up dev/prod flavors, Kover coverage and unit tests",
+        "Set up fastlane delivery to TestFlight, Firebase App Distribution and Google Play"
+      ],
+      "keywords": [
+        "Kotlin Multiplatform",
+        "Ktor",
+        "SQLDelight",
+        "SwiftUI",
+        "Jetpack Compose",
+        "Koin"
+      ],
+      "type": "KMP · iOS · Android"
+    },
+    {
+      "name": "Stuwe",
+      "entity": "BUZZWOO! GmbH & Co. KG",
+      "roles": [
+        "Flutter Developer (project takeover)"
+      ],
+      "description": "Student canteen app (Germany)",
+      "startDate": "2024-08",
+      "endDate": "2026-11",
+      "url": "https://my-stuwe.de",
+      "highlights": [
+        "Maintained the Flutter canteen app for about 1.3K active Android devices, mostly in Germany, across 2024–2026 releases",
+        "Fixed a production crash with a schema probe tool and a 68-check regression harness",
+        "Brought the Android build to API 36 and 16 KB page-size compliance"
+      ],
+      "keywords": [
+        "Flutter",
+        "Firebase App Distribution"
+      ],
+      "type": "Flutter · iOS · Android"
+    },
+    {
+      "name": "Meet Your Master",
+      "entity": "BUZZWOO! GmbH & Co. KG",
+      "roles": [
+        "Lead Flutter Developer"
+      ],
+      "description": "Video-learning masterclass app (Germany)",
+      "startDate": "2024-01",
+      "endDate": "2026-11",
+      "url": "https://meetyourmaster.de",
+      "highlights": [
+        "Built the video-learning app from the first commit through its production 2.0 launch",
+        "Implemented subscriptions and per-course purchases on both stores, plus encrypted offline video downloads",
+        "Shipped on-device ML Kit text recognition that reads redeem codes from the camera, plus social sign-in and Chromecast"
+      ],
+      "keywords": [
+        "Flutter",
+        "Clean Architecture",
+        "in-app purchases",
+        "Video player (better_player)",
+        "OneSignal",
+        "ML Kit text recognition"
+      ],
+      "type": "Flutter · iOS · Android"
+    },
+    {
+      "name": "ORS",
+      "entity": "BUZZWOO! GmbH & Co. KG",
+      "roles": [
+        "Lead Flutter Developer"
+      ],
+      "description": "Multilingual app for refugee accommodation residents (Switzerland)",
+      "startDate": "2022-11",
+      "endDate": "2026-01",
+      "highlights": [
+        "Built a resident app in 13 languages, including right-to-left Arabic and Farsi, with in-app QR scanning",
+        "Set up fastlane, App Center and push notifications, then prepared the handover to the client's team"
+      ],
+      "keywords": [
+        "Flutter",
+        "Firebase Cloud Messaging",
+        "QR scanning",
+        "fastlane"
+      ],
+      "type": "Flutter · iOS · Android"
+    },
+    {
+      "name": "Tidely",
+      "entity": "BUZZWOO! GmbH & Co. KG",
+      "roles": [
+        "Flutter Developer"
+      ],
+      "description": "Liquidity-planning SaaS for German SMEs",
+      "startDate": "2022-01",
+      "endDate": "2023-12",
+      "url": "https://tidely.com",
+      "highlights": [
+        "Built the dashboard, cash-flow forecast and invoice transaction features of a liquidity-planning web app for German SMEs",
+        "Joined Tidely's in-house product team as one of two BUZZWOO! Flutter developers on yearly contracts",
+        "Simulated the backend on a Docker test server to build and verify features, tracked in JIRA and Bitbucket"
+      ],
+      "keywords": [
+        "Flutter Web",
+        "Dart",
+        "Docker",
+        "JIRA",
+        "Bitbucket"
+      ],
+      "type": "Flutter · Web"
+    },
+    {
+      "name": "RLAX Therapist",
+      "entity": "BUZZWOO! GmbH & Co. KG",
+      "roles": [
+        "Lead Flutter Developer"
+      ],
+      "description": "Therapist app for an on-demand wellness platform (Thailand)",
+      "startDate": "2020-10",
+      "endDate": "2023-05",
+      "highlights": [
+        "Created the therapist-side Flutter app and shipped 64 production releases to App Store and Google Play",
+        "Built job broadcast and PromptPay QR payments, letting therapists accept bookings and get paid in-app",
+        "Added Gherkin BDD tests, SonarQube and a GitLab CI pipeline with staging and production lanes"
+      ],
+      "keywords": [
+        "Flutter",
+        "BLoC",
+        "get_it",
+        "freezed",
+        "Hive",
+        "fastlane"
+      ],
+      "type": "Flutter · iOS · Android"
+    },
+    {
+      "name": "Nubert nuReality",
+      "entity": "BUZZWOO! GmbH & Co. KG",
+      "roles": [
+        "Lead Android Developer"
+      ],
+      "description": "AR speaker catalogue app for a German audio brand",
+      "startDate": "2019-05",
+      "endDate": "2023-09",
+      "url": "https://nubert.de/en",
+      "highlights": [
+        "Took an AR speaker-placement prototype to a Google Play release (5K+ downloads) and maintained it for four years",
+        "Fixed recurring memory leaks in AR speaker rendering by optimising 3D model textures and shaders",
+        "Built 3D model placement with move, rotate and scale gestures using ARCore and Sceneform",
+        "Built custom animations for the AR speaker-placement app"
+      ],
+      "keywords": [
+        "Kotlin",
+        "ARCore",
+        "Sceneform",
+        "MVVM",
+        "Dagger",
+        "Room"
+      ],
+      "type": "Android"
+    },
+    {
+      "name": "ImuPro",
+      "entity": "BUZZWOO! GmbH & Co. KG",
+      "roles": [
+        "Android Developer"
+      ],
+      "description": "Food-intolerance diet companion app (Germany)",
+      "startDate": "2018-01",
+      "endDate": "2019-11",
+      "url": "https://imupro.de",
+      "highlights": [
+        "Built a Kotlin diet app that imports test results by QR code and guides users through elimination and provocation phases"
+      ],
+      "keywords": [
+        "Kotlin",
+        "fastlane",
+        "HockeyApp"
+      ],
+      "type": "Android"
+    },
+    {
+      "name": "Tele 5 (5flix)",
+      "entity": "BUZZWOO! GmbH & Co. KG",
+      "roles": [
+        "Android Developer"
+      ],
+      "description": "Streaming app for a German TV channel",
+      "startDate": "2017-08",
+      "endDate": "2020-06",
+      "url": "https://tele5.de",
+      "highlights": [
+        "Built login, tablet layouts, IMA video ads, privacy center and Chromecast support for a Kotlin streaming app",
+        "Set up GitLab CI, fastlane and SonarQube, and led the AndroidX migration",
+        "Started an Apple TV client prototype with TVML and Swift"
+      ],
+      "keywords": [
+        "Kotlin",
+        "Dagger",
+        "RxJava",
+        "Retrofit",
+        "JW Player",
+        "Chromecast"
+      ],
+      "type": "Android · tvOS"
+    },
+    {
+      "name": "Porsche Press Kit",
+      "entity": "BUZZWOO! GmbH & Co. KG",
+      "roles": [
+        "Android Developer"
+      ],
+      "description": "Press-event app for a German premium automaker",
+      "startDate": "2017-01",
+      "endDate": "2018-11",
+      "highlights": [
+        "Built an offline-first press-event app with server sync, zip packages, offline video and event switching",
+        "Set up GitLab CI, fastlane, SonarQube and Cucumber tests for the project"
+      ],
+      "keywords": [
+        "Java",
+        "GitLab CI",
+        "fastlane",
+        "SonarQube"
+      ],
+      "type": "Android"
+    },
+    {
+      "name": "ZEISS in-store lens app",
+      "entity": "BUZZWOO! GmbH & Co. KG",
+      "roles": [
+        "Android Developer"
+      ],
+      "description": "In-store lens simulation app for a German optics brand",
+      "startDate": "2016-09",
+      "endDate": "2017-01",
+      "highlights": [
+        "Built real-time camera filters with OpenGL shaders to simulate eyeglass lens distortion, coatings and tints",
+        "Profiled GPU memory with Android Profiler and fixed leaks in the OpenGL camera rendering pipeline"
+      ],
+      "keywords": [
+        "Java",
+        "OpenGL ES",
+        "GPUImage"
+      ],
+      "type": "Android"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Languages",
+      "keywords": [
+        "Kotlin",
+        "Swift",
+        "Dart",
+        "Java",
+        "Objective-C"
+      ]
+    },
+    {
+      "name": "Mobile UI",
+      "keywords": [
+        "Jetpack Compose",
+        "SwiftUI",
+        "Flutter",
+        "Flutter Web",
+        "Android Views",
+        "UIKit"
+      ]
+    },
+    {
+      "name": "Architecture",
+      "keywords": [
+        "MVVM",
+        "Clean Architecture",
+        "BLoC",
+        "Provider / Riverpod",
+        "Kotlin Multiplatform (KMM/KMP)",
+        "Dependency injection (Dagger, Koin)",
+        "Modularization",
+        "Server-driven UI"
+      ]
+    },
+    {
+      "name": "Data & Networking",
+      "keywords": [
+        "Retrofit",
+        "Ktor",
+        "SQLDelight",
+        "Room",
+        "Firebase",
+        "REST APIs / JSON",
+        "OAuth",
+        "Offline support",
+        "Push notifications (FCM)",
+        "In-app purchases (StoreKit, Play Billing, RevenueCat)",
+        "Payments (Omise, PromptPay)",
+        "Deep links"
+      ]
+    },
+    {
+      "name": "Concurrency & Testing",
+      "keywords": [
+        "Kotlin Coroutines & Flow",
+        "Swift Concurrency (async/await)",
+        "XCTest",
+        "JUnit",
+        "Compose UI tests",
+        "Flutter widget & unit tests",
+        "BDD (Gherkin)"
+      ]
+    },
+    {
+      "name": "CI/CD & Release",
+      "keywords": [
+        "fastlane",
+        "GitLab CI",
+        "Gradle (build variants, flavors)",
+        "Google Play Console",
+        "App Store Connect",
+        "Firebase App Distribution",
+        "SonarQube",
+        "Git"
+      ]
+    },
+    {
+      "name": "Monitoring & Analytics",
+      "keywords": [
+        "Firebase Crashlytics",
+        "Sentry",
+        "Firebase Analytics, Mixpanel",
+        "Performance monitoring",
+        "Android Studio Profiler",
+        "Memory leak analysis",
+        "Crash & ANR analysis (Play vitals)"
+      ]
+    },
+    {
+      "name": "Ways of Working",
+      "keywords": [
+        "Agile / Scrum",
+        "JIRA",
+        "Bitbucket",
+        "Docker (local test servers)",
+        "Code review",
+        "Architecture decision records"
+      ]
+    },
+    {
+      "name": "AI-assisted Development",
+      "keywords": [
+        "Claude Code (custom plugin, skills, agents, hooks)",
+        "AI-assisted code review (GitLab)",
+        "Multi-agent workflows",
+        "Figma MCP (design-to-code)"
+      ]
+    },
+    {
+      "name": "AI in Apps",
+      "keywords": [
+        "On-device ML (Google ML Kit text recognition)",
+        "AR & camera (ARCore, OpenGL ES shaders)"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Chiang Mai University",
+      "studyType": "B.S.",
+      "area": "Software Engineering",
+      "startDate": "2009",
+      "endDate": "2012"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Best Innovation",
+      "date": "2012",
+      "awarder": "International ICT Innovative Services Contest, National Taiwan University",
+      "summary": "iAirPollution iOS app"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Thai",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency"
+    }
+  ],
+  "meta": {
+    "canonical": "https://nutdanai-j.github.io/resume.json",
+    "version": "v1.0.0",
+    "note": "Generated from the same data as the PDF CV; phone number on request / in the PDF"
+  }
+}
