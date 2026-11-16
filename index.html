@@ -5,9 +5,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nutdanai Jantarawong — Senior Mobile Developer — iOS · Android · Flutter · KMP</title>
-<meta name="description" content="Senior mobile developer with 14 years shipping iOS, Android, Flutter and Kotlin Multiplatform apps for German, Swiss and Thai clients. Built the RLAX Android app (4.9-star rating, 10K+ downloads, 73 releases), mentors Flutter developers and built the company&#x27;s AI plugin for mobile developers.">
+<meta name="description" content="Senior mobile developer with 14 years shipping iOS, Android, Flutter and KMP apps, working remotely with German product teams since 2016.">
 <meta property="og:title" content="Nutdanai Jantarawong — Senior Mobile Developer — iOS · Android · Flutter · KMP">
-<meta property="og:description" content="Senior mobile developer with 14 years shipping iOS, Android, Flutter and Kotlin Multiplatform apps for German, Swiss and Thai clients. Built the RLAX Android app (4.9-star rating, 10K+ downloads, 73 releases), mentors Flutter developers and built the company&#x27;s AI plugin for mobile developers.">
+<meta property="og:description" content="Senior mobile developer with 14 years shipping iOS, Android, Flutter and KMP apps, working remotely with German product teams since 2016.">
 <meta property="og:url" content="https://nutdanai-j.github.io/">
 <meta property="og:type" content="profile">
 <meta property="og:image" content="https://nutdanai-j.github.io/og.png">
@@ -63,7 +63,7 @@ h2{font-size:1.6rem;margin:0 0 1rem;letter-spacing:-.01em}
 .extra{display:block;max-height:0;overflow:hidden;transition:max-height .35s ease}
 .card.open .extra{max-height:900px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin:.7rem 0 .2rem}
-.chips span,.skill span{background:var(--chip);border-radius:6px;padding:.15rem .55rem;font-size:.8rem}
+.chips span,.skill>div span{background:var(--chip);border-radius:6px;padding:.15rem .55rem;font-size:.8rem}
 .more{margin-top:.5rem;background:none;border:0;color:var(--accent);font:inherit;font-size:.88rem;cursor:pointer;padding:0}
 .pos-wrap{min-width:0}
 .sub{margin:14px 0 0 18px;padding-left:18px;border-left:2px dashed var(--line)}
@@ -90,6 +90,8 @@ h2{font-size:1.6rem;margin:0 0 1rem;letter-spacing:-.01em}
 .core{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:14px}
 .core h3{margin:0 0 .6rem;font-size:.95rem}.core div{display:flex;flex-wrap:wrap;gap:8px}
 .core span{background:var(--accent);color:#fff;border-radius:6px;padding:.2rem .65rem;font-size:.88rem}
+.cta{text-align:center;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:36px 24px;margin-top:48px}
+.cta p{color:var(--muted);margin:0 0 18px}.cta .btn{margin:4px}
 .all-skills>summary{cursor:pointer;color:var(--accent);font-weight:600;margin:4px 0 14px}
 .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
 .skill{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
@@ -101,6 +103,8 @@ footer{padding:48px 0 64px;color:var(--muted);font-size:.85rem;text-align:center
 .js .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.js .reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 @media (max-width:640px){nav .links{display:none}
+ .stats{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin-right:-24px;padding-right:24px}
+ .stat{flex:0 0 44%;scroll-snap-align:start;padding:12px}.stat .num{font-size:1.25rem}
  .sub{margin-left:0;padding-left:12px}.row summary{grid-template-columns:1fr auto}.row .yr{grid-column:1/-1}.row .rl{grid-column:1}.row .plat{grid-row:auto;grid-column:2}.row-body{padding-left:14px}
  .timeline:before{left:7px}.tl-item{grid-template-columns:1fr;gap:4px;padding-left:28px}
  .tl-item .when{text-align:left;padding-top:0}.tl-item .dot{left:1px;top:4px}.tl-item.pos .dot{left:-2px;top:2px}}
@@ -109,12 +113,12 @@ footer{padding:48px 0 64px;color:var(--muted);font-size:.85rem;text-align:center
 </head>
 <body>
 <nav><div class="in"><a class="brand" href="#top">Nutdanai Jantarawong</a>
-<span class="links"><a href="#journey">Journey</a> <a href="#skills">Skills</a> <a href="#more">More</a></span>
+<span class="links"><a href="#journey">Journey</a> <a href="#skills">Skills</a> <a href="#contact">Contact</a></span>
 <a href="Nutdanai_Jantarawong_CV.pdf">PDF</a></div></nav>
 <header class="wrap hero" id="top">
 <h1>Nutdanai Jantarawong</h1>
 <p class="headline">Senior Mobile Developer — iOS · Android · Flutter · KMP</p>
-<p class="summary">Senior mobile developer with 14 years shipping iOS, Android, Flutter and Kotlin Multiplatform apps for German, Swiss and Thai clients. Built the RLAX Android app (4.9-star rating, 10K+ downloads, 73 releases), mentors Flutter developers and built the company&#x27;s AI plugin for mobile developers.</p>
+<p class="summary">Senior mobile developer with 14 years shipping iOS, Android, Flutter and KMP apps, working remotely with German product teams since 2016.</p>
 <div class="contact"><a href="mailto:nutdanai.jantarawong@gmail.com">nutdanai.jantarawong@gmail.com</a>
 <a href="https://linkedin.com/in/nutdanai-jantarawong" target="_blank" rel="noopener">LinkedIn ↗</a>
 <span>Chiang Mai, Thailand (UTC+7) · Remote · EU overlap; some US hours</span></div>
@@ -129,10 +133,10 @@ footer{padding:48px 0 64px;color:var(--muted);font-size:.85rem;text-align:center
 <div class="dot"></div>
 <div class="when">Sep 2016 – Present</div>
 <div class="pos-wrap"><div class="card pos-card"><h3>Senior Mobile Developer</h3><p class="org">BUZZWOO! GmbH &amp; Co. KG</p>
-<p class="where">Chiang Mai, Thailand · Remote with German teams · client apps for German, Swiss and Thai brands</p><ul><li>Mentored two mid-level Flutter developers and one Flutter intern through code review, onboarding and project handovers</li><li>Built the company&#x27;s Claude Code mobile plugin for all mobile developers: an iOS–Android feature-transposition skill and parity auditor</li><li>Authored the company Android Kotlin style guide and project template (MVVM, Dagger, CI, fastlane track promotion)</li><li>Maintained Apple Enterprise signing infrastructure with fastlane match for 16 in-house and client apps</li><li>Set up GitLab CI and fastlane release pipelines across Android, iOS and Flutter client apps</li></ul></div><div class="sub"><h5>Selected projects at BUZZWOO!</h5><div class="feats"><article class="card feat reveal" data-f="ai android ios">
+<p class="where">Chiang Mai, Thailand · Remote with German teams · client apps for German, Swiss and Thai brands</p><ul><li>Mentored two mid-level Flutter developers and one Flutter intern through code review, onboarding and project handovers</li><li>Built the company&#x27;s Claude Code mobile plugin for all mobile developers: an iOS–Android feature-transposition skill and parity auditor</li><li>Authored the company Android Kotlin style guide and project template (MVVM, Dagger, CI, fastlane track promotion)</li></ul><div class="extra"><ul><li>Maintained Apple Enterprise signing infrastructure with fastlane match for 16 in-house and client apps</li><li>Set up GitLab CI and fastlane release pipelines across Android, iOS and Flutter client apps</li></ul></div><button class="more" aria-expanded="false">+ 2 more</button></div><div class="sub"><h5>Selected projects at BUZZWOO!</h5><div class="feats"><article class="card feat reveal" data-f="ai android ios">
 <div class="card-head"><h4>RLAX</h4><span class="plat">Android · iOS · 2020 – 2026</span></div>
 <p class="org">Lead Android Developer, iOS contributor · at BUZZWOO! <a class="ext" href="https://rlax.com" target="_blank" rel="noopener">rlax.com ↗</a></p>
-<ul><li>Built the RLAX Android app and maintained it through 73 Play Store releases (4.9-star rating, 10K+ downloads)</li><li>Co-developed SwiftUI features and App Store releases for the iOS app (10.5K downloads in 2026)</li></ul>
+<ul><li>Built BUZZWOO!&#x27;s in-house wellness booking app RLAX on Android, shipping 73 Play Store releases (4.9-star rating, 10K+ downloads)</li><li>Co-developed SwiftUI features and App Store releases for the iOS app (10.5K downloads in 2026)</li></ul>
 <div class="extra"><ul><li>Cut Google Play user-perceived crash rate from 11% to 1.5% by triaging Sentry reports and fixing root causes</li><li>Integrated Omise card payments end to end into the RLAX Android booking flow</li><li>Migrated XML and Fragment screens to Jetpack Compose and built the Home Care booking vertical in Compose</li><li>Fixed cold-start, Compose list-key and fragment-lifecycle crashes, then added a startup test to catch regressions</li><li>Built in-app chat with Firestore, push notifications, deep links and read receipts</li><li>Built a Play vitals tool that clusters crashes and ANRs per build, then fixed the app&#x27;s largest crash cluster</li><li>Modernized the build with a version catalog, detekt and lint baselines, targetSdk 36 and 16 KB page-size compliance</li></ul></div>
 <div class="chips"><span>Kotlin</span><span>Coroutines</span><span>Jetpack Compose</span><span>MVVM</span><span>Dagger</span><span>Retrofit</span><span>Firebase</span><span>Omise</span><span>Swift</span><span>SwiftUI</span></div>
 <div class="foot"><span class="badges"><a class="badge" href="https://play.google.com/store/apps/details?id=de.buzzwoo.rlax" target="_blank" rel="noopener">▶ Google Play</a></span><button class="more" aria-expanded="false">+ 7 more</button></div></article><article class="card feat reveal" data-f="ai android ios">
@@ -146,7 +150,7 @@ footer{padding:48px 0 64px;color:var(--muted);font-size:.85rem;text-align:center
 <p class="org">Lead Flutter Developer · at BUZZWOO! <a class="ext" href="https://meetyourmaster.de" target="_blank" rel="noopener">meetyourmaster.de ↗</a></p>
 <ul><li>Built the video-learning app from the first commit through its production 2.0 launch</li><li>Implemented subscriptions and per-course purchases on both stores, plus encrypted offline video downloads</li></ul>
 <div class="extra"><ul><li>Shipped on-device ML Kit text recognition that reads redeem codes from the camera, plus social sign-in and Chromecast</li></ul></div>
-<div class="chips"><span>Flutter</span><span>Clean Architecture</span><span>in-app purchases</span><span>better_player</span><span>OneSignal</span><span>google_mlkit_text_recognition</span></div>
+<div class="chips"><span>Flutter</span><span>Clean Architecture</span><span>in-app purchases</span><span>Video player (better_player)</span><span>OneSignal</span><span>ML Kit text recognition</span></div>
 <div class="foot"><span class="badges"><a class="badge" href="https://play.google.com/store/apps/details?id=com.meetyourmaster.app" target="_blank" rel="noopener">▶ Google Play</a><a class="badge" href="https://apps.apple.com/app/id1437803703" target="_blank" rel="noopener">App Store ↗</a></span><button class="more" aria-expanded="false">+ 1 more</button></div></article></div><h5>More projects at BUZZWOO! <span class="hint">tap to expand</span></h5><div class="rows"><details class="row reveal" data-f="android ios kmp">
 <summary><span class="yr">2026</span><span class="nm">DoenerCheck</span>
 <span class="rl">Mobile Developer (project takeover)</span><span class="plat">KMP · iOS · Android</span></summary>
@@ -212,6 +216,9 @@ footer{padding:48px 0 64px;color:var(--muted);font-size:.85rem;text-align:center
 <section id="skills"><h2>Skills</h2><div class="core reveal"><h3>Core</h3><div><span>Kotlin</span><span>Swift</span><span>Jetpack Compose</span><span>SwiftUI</span><span>Flutter</span><span>Kotlin Multiplatform (KMM/KMP)</span><span>Kotlin Coroutines &amp; Flow</span><span>Clean Architecture</span><span>MVVM</span><span>Server-driven UI</span><span>fastlane</span><span>Claude Code (custom plugin, skills, agents, hooks)</span></div></div>
 <details class="all-skills"><summary>Show all skills</summary><div class="skills"><div class="skill reveal"><h3>Languages</h3><div><span>Kotlin</span><span>Swift</span><span>Dart</span><span>Java</span><span>Objective-C</span></div></div><div class="skill reveal"><h3>Mobile UI</h3><div><span>Jetpack Compose</span><span>SwiftUI</span><span>Flutter</span><span>Flutter Web</span><span>Android Views</span><span>UIKit</span></div></div><div class="skill reveal"><h3>Architecture</h3><div><span>MVVM</span><span>Clean Architecture</span><span>BLoC</span><span>Provider / Riverpod</span><span>Kotlin Multiplatform (KMM/KMP)</span><span>Dependency injection (Dagger, Koin)</span><span>Modularization</span><span>Server-driven UI</span></div></div><div class="skill reveal"><h3>Data &amp; Networking</h3><div><span>Retrofit</span><span>Ktor</span><span>SQLDelight</span><span>Room</span><span>Firebase</span><span>REST APIs / JSON</span><span>OAuth</span><span>Offline support</span><span>Push notifications (FCM)</span><span>In-app purchases (StoreKit, Play Billing, RevenueCat)</span><span>Payments (Omise, PromptPay)</span><span>Deep links</span></div></div><div class="skill reveal"><h3>Concurrency &amp; Testing</h3><div><span>Kotlin Coroutines &amp; Flow</span><span>Swift Concurrency (async/await)</span><span>XCTest</span><span>JUnit</span><span>Compose UI tests</span><span>Flutter widget &amp; unit tests</span><span>BDD (Gherkin)</span></div></div><div class="skill reveal"><h3>CI/CD &amp; Release</h3><div><span>fastlane</span><span>GitLab CI</span><span>Gradle (build variants, flavors)</span><span>Google Play Console</span><span>App Store Connect</span><span>Firebase App Distribution</span><span>SonarQube</span><span>Git</span></div></div><div class="skill reveal"><h3>Monitoring &amp; Analytics</h3><div><span>Firebase Crashlytics</span><span>Sentry</span><span>Firebase Analytics, Mixpanel</span><span>Performance monitoring</span><span>Android Studio Profiler</span><span>Memory leak analysis</span><span>Crash &amp; ANR analysis (Play vitals)</span></div></div><div class="skill reveal"><h3>Ways of Working</h3><div><span>Agile / Scrum</span><span>JIRA</span><span>Bitbucket</span><span>Docker (local test servers)</span><span>Code review</span><span>Architecture decision records</span></div></div><div class="skill reveal"><h3>AI-assisted Development</h3><div><span>Claude Code (custom plugin, skills, agents, hooks)</span><span>AI-assisted code review (GitLab)</span><span>Multi-agent workflows</span><span>Figma MCP (hi-fi design checks, pixel-perfect design-to-code)</span></div></div><div class="skill reveal"><h3>AI in Apps</h3><div><span>On-device ML (Google ML Kit text recognition)</span><span>AR &amp; camera (ARCore, OpenGL ES shaders)</span></div></div></div></details></section>
 <section id="more"><h2>Education &amp; more</h2><div class="facts"><div class="skill reveal"><h3>Education</h3><p>B.S. Software Engineering<br><span class="org">Chiang Mai University · 2009 – 2012</span></p></div><div class="skill reveal"><h3>Award</h3><p>Best Innovation, 2012<br><span class="org">International ICT Innovative Services Contest, National Taiwan University: iAirPollution iOS app</span></p></div><div class="skill reveal"><h3>Languages</h3><p>Thai (Native), English (Professional working proficiency)</p></div></div></section>
+<section id="contact" class="cta reveal"><h2>Let's talk</h2>
+<p>Looking for a senior mobile engineer who owns features end to end? Get in touch.</p>
+<a class="btn" href="mailto:nutdanai.jantarawong@gmail.com">Email me</a><a class="btn ghost" href="https://linkedin.com/in/nutdanai-jantarawong" target="_blank" rel="noopener">LinkedIn ↗</a><a class="btn ghost" href="Nutdanai_Jantarawong_CV.pdf">PDF CV</a></section>
 </main>
 <footer>Built from the same data as my PDF CV · Chiang Mai, Thailand (UTC+7)</footer>
 <script>
