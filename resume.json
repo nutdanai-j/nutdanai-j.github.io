@@ -191,7 +191,8 @@
       "highlights": [
         "Built the video-learning app from the first commit through its production 2.0 launch",
         "Implemented subscriptions and per-course purchases on both stores, plus encrypted offline video downloads",
-        "Shipped on-device ML Kit text recognition that reads redeem codes from the camera, plus social sign-in and Chromecast"
+        "Shipped on-device ML Kit text recognition that reads redeem codes from the camera, plus social sign-in and Chromecast",
+        "Bridged the native iOS video player and Android ExoPlayer into Flutter through platform channels"
       ],
       "keywords": [
         "Flutter",
@@ -260,7 +261,8 @@
       "highlights": [
         "Created the therapist-side Flutter app, used by 729 therapists to date, and shipped 64 production releases to both stores",
         "Built job broadcast and PromptPay QR payments, letting therapists accept bookings and get paid in-app",
-        "Added Gherkin BDD tests, SonarQube and a GitLab CI pipeline with staging and production lanes"
+        "Added Gherkin BDD tests, SonarQube and a GitLab CI pipeline with staging and production lanes",
+        "Built background location tracking of therapists through platform channels to native iOS and Android location services"
       ],
       "keywords": [
         "Flutter",
@@ -403,6 +405,7 @@
         "SwiftUI",
         "Flutter",
         "Flutter Web",
+        "Flutter platform channels (Swift, Kotlin)",
         "Android Views",
         "UIKit"
       ]

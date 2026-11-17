@@ -66,6 +66,7 @@ Google Play: https://play.google.com/store/apps/details?id=com.meetyourmaster.ap
 - Built the video-learning app from the first commit through its production 2.0 launch
 - Implemented subscriptions and per-course purchases on both stores, plus encrypted offline video downloads
 - Shipped on-device ML Kit text recognition that reads redeem codes from the camera, plus social sign-in and Chromecast
+- Bridged the native iOS video player and Android ExoPlayer into Flutter through platform channels
 
 **ORS** · Lead Flutter Developer · Flutter · iOS · Android (2022 – 2026)
 Stack: Flutter, Firebase Cloud Messaging, QR scanning, fastlane
@@ -83,6 +84,7 @@ Stack: Flutter, BLoC, get_it, freezed, Hive, fastlane
 - Created the therapist-side Flutter app, used by 729 therapists to date, and shipped 64 production releases to both stores
 - Built job broadcast and PromptPay QR payments, letting therapists accept bookings and get paid in-app
 - Added Gherkin BDD tests, SonarQube and a GitLab CI pipeline with staging and production lanes
+- Built background location tracking of therapists through platform channels to native iOS and Android location services
 
 **Nubert nuReality** · Lead Android Developer · Android (2019 – 2023) · nubert.de/en
 Stack: Kotlin, ARCore, Sceneform, MVVM, Dagger, Room
@@ -119,7 +121,7 @@ Chiang Mai, Thailand
 
 ## Skills
 - Languages: Kotlin, Swift, Dart, Java, Objective-C
-- Mobile UI: Jetpack Compose, SwiftUI, Flutter, Flutter Web, Android Views, UIKit
+- Mobile UI: Jetpack Compose, SwiftUI, Flutter, Flutter Web, Flutter platform channels (Swift, Kotlin), Android Views, UIKit
 - Architecture: MVVM, Clean Architecture, BLoC, Provider / Riverpod, Kotlin Multiplatform (KMM/KMP), Dependency injection (Dagger, Koin), Modularization, Server-driven UI
 - Data & Networking: Retrofit, Ktor, SQLDelight, kotlinx.serialization, Room, Firebase, REST APIs / JSON, OAuth, Offline support, Push notifications (FCM), In-app purchases (StoreKit, Play Billing, RevenueCat), Payments (Omise, PromptPay), Deep links
 - Concurrency & Testing: Kotlin Coroutines & Flow, Swift Concurrency (async/await), XCTest, JUnit, Compose UI tests, Flutter widget & unit tests, BDD (Gherkin)
