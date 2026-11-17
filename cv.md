@@ -4,7 +4,7 @@ Senior Mobile Developer — iOS · Android · Flutter · KMP
 Email: nutdanai.jantarawong@gmail.com | LinkedIn: linkedin.com/in/nutdanai-jantarawong | Web: nutdanai-j.github.io | Chiang Mai, Thailand (UTC+7) · Remote, EU/US overlap
 
 ## Summary
-Senior mobile developer with 14 years shipping iOS, Android, Flutter and Kotlin Multiplatform apps for German, Swiss and Thai clients. Built BUZZWOO!'s in-house RLAX booking app on Android (4.9-star rating, 10K+ downloads, 73 releases), mentors Flutter developers and built the company's AI plugin for mobile developers.
+Senior mobile developer with 14 years shipping iOS, Android, Flutter and Kotlin Multiplatform apps for German, Swiss and Thai clients. Built BUZZWOO!'s in-house RLAX booking app on Android (4.9-star rating, 10K+ downloads, 73 releases), mentors Flutter developers and built the company's AI plugin for mobile developers. Sole app developer of the Royal Society for Blind Children's audiobook app, recognised at Cannes Lions and the Webby Awards.
 
 ## Experience
 
