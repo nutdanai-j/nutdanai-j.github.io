@@ -35,6 +35,7 @@ Google Play: https://play.google.com/store/apps/details?id=de.buzzwoo.BedtimeDon
 - Built a Royal Society for Blind Children (UK) app where volunteers record bedtime stories as audiobooks for blind children
 - Developed the app alone from first commit to App Store and Google Play release (5K+ iOS, 1K+ Android downloads)
 - Built an EPUB reader that records the user's voice with sentence highlighting, plus an audiobook player with lock-screen controls
+- Built a custom card-swipe carousel with hand-tuned Flutter animations
 
 **Youth football training app, pre-launch, Germany** · Lead Mobile Developer · iOS · Android (2026)
 Stack: SwiftUI, Jetpack Compose, RevenueCat, Firebase Cloud Messaging, fastlane

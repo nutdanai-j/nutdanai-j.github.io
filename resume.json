@@ -92,7 +92,8 @@
       "highlights": [
         "Built a Royal Society for Blind Children (UK) app where volunteers record bedtime stories as audiobooks for blind children",
         "Developed the app alone from first commit to App Store and Google Play release (5K+ iOS, 1K+ Android downloads)",
-        "Built an EPUB reader that records the user's voice with sentence highlighting, plus an audiobook player with lock-screen controls"
+        "Built an EPUB reader that records the user's voice with sentence highlighting, plus an audiobook player with lock-screen controls",
+        "Built a custom card-swipe carousel with hand-tuned Flutter animations"
       ],
       "keywords": [
         "Flutter",
