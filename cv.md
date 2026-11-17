@@ -80,7 +80,7 @@ Stack: Flutter Web, Dart, Docker, JIRA, Bitbucket
 
 **RLAX Therapist** · Lead Flutter Developer · Flutter · iOS · Android (2020 – 2023)
 Stack: Flutter, BLoC, get_it, freezed, Hive, fastlane
-- Created the therapist-side Flutter app and shipped 64 production releases to App Store and Google Play
+- Created the therapist-side Flutter app, used by 729 therapists to date, and shipped 64 production releases to both stores
 - Built job broadcast and PromptPay QR payments, letting therapists accept bookings and get paid in-app
 - Added Gherkin BDD tests, SonarQube and a GitLab CI pipeline with staging and production lanes
 

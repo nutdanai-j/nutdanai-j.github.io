@@ -258,7 +258,7 @@
       "startDate": "2020-10",
       "endDate": "2023-05",
       "highlights": [
-        "Created the therapist-side Flutter app and shipped 64 production releases to App Store and Google Play",
+        "Created the therapist-side Flutter app, used by 729 therapists to date, and shipped 64 production releases to both stores",
         "Built job broadcast and PromptPay QR payments, letting therapists accept bookings and get paid in-app",
         "Added Gherkin BDD tests, SonarQube and a GitLab CI pipeline with staging and production lanes"
       ],
