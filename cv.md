@@ -32,7 +32,7 @@ Google Play: https://play.google.com/store/apps/details?id=de.buzzwoo.rlax
 **Bedtime Donations** · Sole Flutter Developer · Flutter · iOS · Android (2025) · bedtime-donations.com
 Stack: Flutter, GetX, just_audio, ffmpeg, Firebase
 Google Play: https://play.google.com/store/apps/details?id=de.buzzwoo.BedtimeDonations · App Store: https://apps.apple.com/app/id6751262460
-- Built a Royal Society for Blind Children (UK) app where volunteers record bedtime stories as audiobooks for blind children
+- Built the Royal Society for Blind Children's audiobook app, recognised at Cannes Lions and the Webby Awards
 - Developed the app alone from first commit to App Store and Google Play release (5K+ iOS, 1K+ Android downloads)
 - Built an EPUB reader that records the user's voice with sentence highlighting, plus an audiobook player with lock-screen controls
 - Built a custom card-swipe carousel with hand-tuned Flutter animations
@@ -136,6 +136,7 @@ Chiang Mai, Thailand
 - B.S. Software Engineering, Chiang Mai University (2009 – 2012)
 
 ## Awards
+- Webby People's Voice (Accessibility & Inclusion), Cannes Lions 3× Bronze, One Show Gold, NYF Grand Prix, Bedtime Donations campaign for the Royal Society for Blind Children (2026): sole Flutter developer of the recognised app
 - Best Innovation, International ICT Innovative Services Contest, National Taiwan University (2012): iAirPollution iOS app
 
 ## Languages
